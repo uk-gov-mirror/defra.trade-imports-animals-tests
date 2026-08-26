@@ -8,6 +8,13 @@ export type JourneyContext = {
   declarationDate?: string;
 };
 
+/** Which address-book records the journey picks for its parties. Every role
+ * defaults to a shared fixture; name one here to pick a record the spec owns,
+ * which a spec must do before editing or deleting the address it picked. */
+export type AddressChoices = {
+  consignor?: string;
+};
+
 const COUNTRY = 'France';
 const PORT = 'Aberdeen Harbour (GB ABD)';
 // Inside the arrival-date window (1 week back to 6 months ahead) wherever the
@@ -123,7 +130,10 @@ export class Journey {
     await this.pages.accompanyingDocuments.heading.waitFor();
   }
 
-  async fillAddressesToCph(): Promise<void> {
+  /** `consignor` picks a different record for the consignor role than the shared
+   * fixture. A spec that edits or deletes the address it picked must own that
+   * record — the fixtures are shared with every spec running alongside it. */
+  async fillAddressesToCph({ consignor }: AddressChoices = {}): Promise<void> {
     await this.pages.overview.task('Roles and addresses').click();
     const parties = [
       ['Consignor or exporter', 'Astra Rosales', 'consignorSelection'],
@@ -133,8 +143,9 @@ export class Journey {
       ['Importer', 'Import Co UK', 'importerSelection'],
     ] as const;
     for (const [role, name, picker] of parties) {
+      const chosen = picker === 'consignorSelection' ? (consignor ?? name) : name;
       await this.pages.addresses.addParty(role).click();
-      await this.pages[picker].select(name);
+      await this.pages[picker].select(chosen);
       await this.pages[picker].saveAndContinue.click();
       await this.pages.addresses.heading.waitFor();
     }
@@ -142,8 +153,8 @@ export class Journey {
     await this.pages.cphNumber.heading.waitFor();
   }
 
-  async answerAddresses(): Promise<void> {
-    await this.fillAddressesToCph();
+  async answerAddresses(choices: AddressChoices = {}): Promise<void> {
+    await this.fillAddressesToCph(choices);
     await this.pages.cphNumber.cphNumber.fill('12/345/6789');
     await this.pages.cphNumber.saveAndContinue.click();
     await this.pages.overview.heading.waitFor();
@@ -196,12 +207,12 @@ export class Journey {
     await this.pages.overview.heading.waitFor();
   }
 
-  async completeAnswerSections(): Promise<void> {
+  async completeAnswerSections(choices: AddressChoices = {}): Promise<void> {
     await this.answerOrigin({ requiresRegionCode: 'Yes', internalReference: 'Imports456GB' });
     await this.answerCommodity();
     await this.answerAnimalIdentification();
     await this.answerReasonAndAdditionalDetails();
-    await this.answerAddresses();
+    await this.answerAddresses(choices);
     await this.answerTransport();
     await this.answerContact();
   }
@@ -300,17 +311,17 @@ export class Journey {
     await this.pages.notificationView.heading.waitFor();
   }
 
-  async toDeclaration(): Promise<void> {
+  async toDeclaration(choices: AddressChoices = {}): Promise<void> {
     await this.startNotification();
-    await this.completeAnswerSections();
+    await this.completeAnswerSections(choices);
     await this.pages.overview.task('Check and submit').click();
     await this.pages.notificationView.heading.waitFor();
     await this.pages.notificationView.continueButton.click();
     await this.pages.declaration.heading.waitFor();
   }
 
-  async submitNotification(): Promise<void> {
-    await this.toDeclaration();
+  async submitNotification(choices: AddressChoices = {}): Promise<void> {
+    await this.toDeclaration(choices);
     await this.pages.declaration.confirmation.check();
     await this.pages.declaration.continueButton.click();
     await this.pages.page.getByRole('heading', { name: 'Import notification submitted' }).waitFor();
