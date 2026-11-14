@@ -1,0 +1,2946 @@
+<!doctype html><meta charset="utf-8"><title>security-scan.json</title><pre>{
+	"@programName": "ZAP",
+	"@version": "2.17.0",
+	"@generated": "Wed, 11 Nov 2026 08:03:27",
+	"created": "2026-11-11T08:03:27.079586755Z",
+	"insights":[
+		{
+			"level": "Low",
+			"reason": "Warning",
+			"site": "",
+			"key": "insight.log.error",
+			"description": "ZAP errors logged - see the zap.log file for details",
+			"statistic": "19"
+		},
+		{
+			"level": "Low",
+			"reason": "Warning",
+			"site": "",
+			"key": "insight.log.warn",
+			"description": "ZAP warnings logged - see the zap.log file for details",
+			"statistic": "10"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3000",
+			"key": "insight.code.2xx",
+			"description": "Percentage of responses with status code 2xx",
+			"statistic": "58"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3000",
+			"key": "insight.code.3xx",
+			"description": "Percentage of responses with status code 3xx",
+			"statistic": "16"
+		},
+		{
+			"level": "Info",
+			"reason": "Exceeded Low",
+			"site": "http://localhost:3000",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "16"
+		},
+		{
+			"level": "Info",
+			"reason": "Exceeded Low",
+			"site": "http://localhost:3000",
+			"key": "insight.code.5xx",
+			"description": "Percentage of responses with status code 5xx",
+			"statistic": "8"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3000",
+			"key": "insight.endpoint.ctype.application/json",
+			"description": "Percentage of endpoints with content type application/json",
+			"statistic": "1"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3000",
+			"key": "insight.endpoint.ctype.image/svg+xml",
+			"description": "Percentage of endpoints with content type image/svg+xml",
+			"statistic": "1"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3000",
+			"key": "insight.endpoint.ctype.text/css",
+			"description": "Percentage of endpoints with content type text/css",
+			"statistic": "3"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3000",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "89"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3000",
+			"key": "insight.endpoint.ctype.text/javascript",
+			"description": "Percentage of endpoints with content type text/javascript",
+			"statistic": "3"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3000",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "37"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3000",
+			"key": "insight.endpoint.method.POST",
+			"description": "Percentage of endpoints with method POST",
+			"statistic": "62"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3000",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "56"
+		},
+		{
+			"level": "Info",
+			"reason": "Exceeded Low",
+			"site": "http://localhost:3000",
+			"key": "insight.response.slow",
+			"description": "Percentage of slow responses",
+			"statistic": "7"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3001",
+			"key": "insight.code.2xx",
+			"description": "Percentage of responses with status code 2xx",
+			"statistic": "42"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3001",
+			"key": "insight.code.3xx",
+			"description": "Percentage of responses with status code 3xx",
+			"statistic": "21"
+		},
+		{
+			"level": "Info",
+			"reason": "Exceeded Low",
+			"site": "http://localhost:3001",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "15"
+		},
+		{
+			"level": "Info",
+			"reason": "Exceeded Low",
+			"site": "http://localhost:3001",
+			"key": "insight.code.5xx",
+			"description": "Percentage of responses with status code 5xx",
+			"statistic": "19"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3001",
+			"key": "insight.endpoint.ctype.font/woff2",
+			"description": "Percentage of endpoints with content type font/woff2",
+			"statistic": "9"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3001",
+			"key": "insight.endpoint.ctype.image/svg+xml",
+			"description": "Percentage of endpoints with content type image/svg+xml",
+			"statistic": "4"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3001",
+			"key": "insight.endpoint.ctype.text/css",
+			"description": "Percentage of endpoints with content type text/css",
+			"statistic": "4"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3001",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "61"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3001",
+			"key": "insight.endpoint.ctype.text/javascript",
+			"description": "Percentage of endpoints with content type text/javascript",
+			"statistic": "14"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3001",
+			"key": "insight.endpoint.method.DELETE",
+			"description": "Percentage of endpoints with method DELETE",
+			"statistic": "4"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3001",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "85"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3001",
+			"key": "insight.endpoint.method.POST",
+			"description": "Percentage of endpoints with method POST",
+			"statistic": "9"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3001",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "21"
+		},
+		{
+			"level": "Info",
+			"reason": "Exceeded Low",
+			"site": "http://localhost:3001",
+			"key": "insight.response.slow",
+			"description": "Percentage of slow responses",
+			"statistic": "27"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3002",
+			"key": "insight.code.2xx",
+			"description": "Percentage of responses with status code 2xx",
+			"statistic": "54"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3002",
+			"key": "insight.code.3xx",
+			"description": "Percentage of responses with status code 3xx",
+			"statistic": "25"
+		},
+		{
+			"level": "Info",
+			"reason": "Exceeded Low",
+			"site": "http://localhost:3002",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "19"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3002",
+			"key": "insight.endpoint.ctype.image/svg+xml",
+			"description": "Percentage of endpoints with content type image/svg+xml",
+			"statistic": "5"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3002",
+			"key": "insight.endpoint.ctype.text/css",
+			"description": "Percentage of endpoints with content type text/css",
+			"statistic": "5"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3002",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "82"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3002",
+			"key": "insight.endpoint.ctype.text/javascript",
+			"description": "Percentage of endpoints with content type text/javascript",
+			"statistic": "5"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3002",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "76"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3002",
+			"key": "insight.endpoint.method.POST",
+			"description": "Percentage of endpoints with method POST",
+			"statistic": "23"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3002",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "17"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3002",
+			"key": "insight.response.slow",
+			"description": "Percentage of slow responses",
+			"statistic": "5"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3007",
+			"key": "insight.code.2xx",
+			"description": "Percentage of responses with status code 2xx",
+			"statistic": "65"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3007",
+			"key": "insight.code.3xx",
+			"description": "Percentage of responses with status code 3xx",
+			"statistic": "30"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3007",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "3"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3007",
+			"key": "insight.endpoint.ctype.font/woff2",
+			"description": "Percentage of endpoints with content type font/woff2",
+			"statistic": "18"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3007",
+			"key": "insight.endpoint.ctype.image/svg+xml",
+			"description": "Percentage of endpoints with content type image/svg+xml",
+			"statistic": "9"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3007",
+			"key": "insight.endpoint.ctype.text/css",
+			"description": "Percentage of endpoints with content type text/css",
+			"statistic": "9"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3007",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "54"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3007",
+			"key": "insight.endpoint.ctype.text/javascript",
+			"description": "Percentage of endpoints with content type text/javascript",
+			"statistic": "9"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3007",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "90"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3007",
+			"key": "insight.endpoint.method.POST",
+			"description": "Percentage of endpoints with method POST",
+			"statistic": "9"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3007",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "11"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:3007",
+			"key": "insight.response.slow",
+			"description": "Percentage of slow responses",
+			"statistic": "1"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:8085",
+			"key": "insight.code.2xx",
+			"description": "Percentage of responses with status code 2xx",
+			"statistic": "3"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:8085",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "96"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:8085",
+			"key": "insight.endpoint.ctype.application/json",
+			"description": "Percentage of endpoints with content type application/json",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:8085",
+			"key": "insight.endpoint.method.POST",
+			"description": "Percentage of endpoints with method POST",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:8085",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "2"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:8085",
+			"key": "insight.response.slow",
+			"description": "Percentage of slow responses",
+			"statistic": "11"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:8089",
+			"key": "insight.code.2xx",
+			"description": "Percentage of responses with status code 2xx",
+			"statistic": "67"
+		},
+		{
+			"level": "Info",
+			"reason": "Exceeded Low",
+			"site": "http://localhost:8089",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "32"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:8089",
+			"key": "insight.endpoint.ctype.application/json",
+			"description": "Percentage of endpoints with content type application/json",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:8089",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://localhost:8089",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "2"
+		}
+	],
+	"site":[ 
+		{
+			"@name": "http://localhost:3002",
+			"@host": "localhost",
+			"@port": "3002",
+			"@ssl": "false",
+			"alerts": [ 
+				{
+					"pluginid": "6",
+					"alertRef": "6-5",
+					"alert": "Path Traversal",
+					"name": "Path Traversal",
+					"riskcode": "3",
+					"confidence": "1",
+					"riskdesc": "High (Low)",
+					"desc": "&lt;p&gt;The Path Traversal attack technique allows an attacker access to files, directories, and commands that potentially reside outside the web document root directory. An attacker may manipulate a URL in such a way that the web site will execute or reveal the contents of arbitrary files anywhere on the web server. Any device that exposes an HTTP-based interface is potentially vulnerable to Path Traversal.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Most web sites restrict user access to a specific portion of the file-system, typically called the \"web document root\" or \"CGI root\" directory. These directories contain the files intended for user access and the executable necessary to drive web application functionality. To access files or execute commands anywhere on the file-system, Path Traversal attacks will utilize the ability of special-characters sequences.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;The most basic Path Traversal attack uses the \"../\" special-character sequence to alter the resource location requested in the URL. Although most popular web servers will prevent this technique from escaping the web document root, alternate encodings of the \"../\" sequence may help bypass the security filters. These method variations include valid and invalid Unicode-encoding (\"..%u2216\" or \"..%c0%af\") of the forward slash character, backslash characters (\"..\\\") on Windows-based servers, URL encoded characters \"%2e%2e%2f\"), and double URL encoding (\"..%255c\") of the backslash character.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Even if the web server properly restricts Path Traversal attempts in the URL path, a web application itself may still be vulnerable due to improper handling of user-supplied input. This is a common problem of web applications that use template mechanisms or load static text from files. In variations of the attack, the original URL parameter value is substituted with the file name of one of the web application's dynamic scripts. Consequently, the results can reveal source code because the file is interpreted as text instead of an executable script. These techniques often employ additional special characters such as the dot (\".\") to reveal the listing of the current working directory, or \"%00\" NULL characters in order to bypass rudimentary file extension checks.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "2471",
+							"uri": "http://localhost:3002/address-book/add",
+							"nodeName": "http:\/\/localhost:3002\/http:\/\/localhost:3002\/address-book\/\u00ABaddressId\u00BB ()(addressLine1,addressLine2,countryCode,county,crumb,email,name,phone,postcode,roles,townOrCity)",
+							"method": "POST",
+							"param": "phone",
+							"attack": "add",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "2470",
+							"uri": "http://localhost:3002/address-book/add",
+							"nodeName": "http:\/\/localhost:3002\/http:\/\/localhost:3002\/address-book\/\u00ABaddressId\u00BB ()(addressLine1,addressLine2,countryCode,county,crumb,email,name,phone,postcode,roles,townOrCity)",
+							"method": "POST",
+							"param": "postcode",
+							"attack": "add",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "&lt;p&gt;Assume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use an allow list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a deny list). However, deny lists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, \"boat\" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as \"red\" or \"blue.\"&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;For filenames, use stringent allow lists that limit the character set to be used. If feasible, only allow a single \".\" character in the filename to avoid weaknesses, and exclude directory separators such as \"/\". Use an allow list of allowable file extensions.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Warning: if you attempt to cleanse your data, then do so that the end result is not in the form that can be dangerous. A sanitizing mechanism can remove characters such as '.' and ';' which may be required for some exploits. An attacker can try to fool the sanitizing mechanism into \"cleaning\" data into a dangerous form. Suppose the attacker injects a '.' inside a filename (e.g. \"sensi.tiveFile\") and the sanitizing mechanism removes the character resulting in the valid filename, \"sensitiveFile\". If the input data are now assumed to be safe, then the file may be compromised. &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Inputs should be decoded and canonicalized to the application's current internal representation before being validated. Make sure that your application does not decode the same input twice. Such errors could be used to bypass allow list schemes by introducing dangerous inputs after they have been checked.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Use a built-in path canonicalization function (such as realpath() in C) that produces the canonical version of the pathname, which effectively removes \"..\" sequences and symbolic links.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Run your code using the lowest privileges that are required to accomplish the necessary tasks. If possible, create isolated accounts with limited privileges that are only used for a single task. That way, a successful attack will not immediately give the attacker access to the rest of the software or its environment. For example, database applications rarely need to run as the database administrator, especially in day-to-day operations.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;When the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Run your code in a \"jail\" or similar sandbox environment that enforces strict boundaries between the process and the operating system. This may effectively restrict which files can be accessed in a particular directory or which commands can be executed by your software.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;OS-level examples include the Unix chroot jail, AppArmor, and SELinux. In general, managed code may provide some protection. For example, java.io.FilePermission in the Java SecurityManager allows you to specify restrictions on file operations.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;This may not be a feasible solution, and it only limits the impact to the operating system; the rest of your application may still be subject to compromise.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;",
+					"otherinfo": "",
+					"reference": "&lt;p&gt;https://owasp.org/www-community/attacks/Path_Traversal&lt;/p&gt;&lt;p&gt;https://cwe.mitre.org/data/definitions/22.html&lt;/p&gt;",
+					"cweid": "22",
+					"wascid": "33",
+					"sourceid": "72878"
+				},
+				{
+					"pluginid": "40018",
+					"alertRef": "40018",
+					"alert": "SQL Injection",
+					"name": "SQL Injection",
+					"riskcode": "3",
+					"confidence": "2",
+					"riskdesc": "High (Medium)",
+					"desc": "&lt;p&gt;SQL injection may be possible.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "2472",
+							"uri": "http://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR+AND+1%3D1+--+",
+							"nodeName": "http:\/\/localhost:3002\/address-book (addressType)",
+							"method": "GET",
+							"param": "addressType",
+							"attack": "ORIGIN_OR_CONSIGNOR AND 1=1 -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [ORIGIN_OR_CONSIGNOR AND 1=1 -- ] and [ORIGIN_OR_CONSIGNOR AND 1=2 -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was returned for the original parameter.\nThe vulnerability was detected by successfully restricting the data originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "2473",
+							"uri": "http://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR+AND+1%3D1+--+&amp;q=Security+Scan+Farm+1794382770192&amp;role=PLACE_OF_ORIGIN",
+							"nodeName": "http:\/\/localhost:3002\/address-book (addressType,q,role)",
+							"method": "GET",
+							"param": "addressType",
+							"attack": "ORIGIN_OR_CONSIGNOR AND 1=1 -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [ORIGIN_OR_CONSIGNOR AND 1=1 -- ] and [ORIGIN_OR_CONSIGNOR AND 1=2 -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was returned for the original parameter.\nThe vulnerability was detected by successfully restricting the data originally returned, by manipulating the parameter."
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "&lt;p&gt;Do not trust client side input, even if there is client side validation in place.&lt;/p&gt;&lt;p&gt;In general, type check all data on the server side.&lt;/p&gt;&lt;p&gt;If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by '?'&lt;/p&gt;&lt;p&gt;If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.&lt;/p&gt;&lt;p&gt;If database Stored Procedures can be used, use them.&lt;/p&gt;&lt;p&gt;Do *not* concatenate strings into queries in the stored procedure, or use 'exec', 'exec immediate', or equivalent functionality!&lt;/p&gt;&lt;p&gt;Do not create dynamic SQL queries using simple string concatenation.&lt;/p&gt;&lt;p&gt;Escape all data received from the client.&lt;/p&gt;&lt;p&gt;Apply an 'allow list' of allowed characters, or a 'deny list' of disallowed characters in user input.&lt;/p&gt;&lt;p&gt;Apply the principle of least privilege by using the least privileged database user possible.&lt;/p&gt;&lt;p&gt;In particular, avoid using the 'sa' or 'db-owner' database users. This does not eliminate SQL injection, but minimizes its impact.&lt;/p&gt;&lt;p&gt;Grant the minimum database access that is necessary for the application.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;The page results were successfully manipulated using the boolean conditions [ORIGIN_OR_CONSIGNOR AND 1=1 -- ] and [ORIGIN_OR_CONSIGNOR AND 1=2 -- ]&lt;/p&gt;&lt;p&gt;The parameter value being modified was stripped from the HTML output for the purposes of the comparison.&lt;/p&gt;&lt;p&gt;Data was returned for the original parameter.&lt;/p&gt;&lt;p&gt;The vulnerability was detected by successfully restricting the data originally returned, by manipulating the parameter.&lt;/p&gt;",
+					"reference": "&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html&lt;/p&gt;",
+					"cweid": "89",
+					"wascid": "19",
+					"sourceid": "75797"
+				},
+				{
+					"pluginid": "10038",
+					"alertRef": "10038-1",
+					"alert": "Content Security Policy (CSP) Header Not Set",
+					"name": "Content Security Policy (CSP) Header Not Set",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "&lt;p&gt;Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1653",
+							"uri": "http://localhost:3002/address-book/add?journey-type=not-a-journey&amp;notification-id=GBN-AG-26-4F7K2P&amp;fulfilment-id=9ad1e2f3-a4b5-4c60-8d1c-9e0f1a2b3c4d&amp;handshake-token=handshake-token-value",
+							"nodeName": "http:\/\/localhost:3002\/http:\/\/localhost:3002\/address-book\/\u00ABaddressId\u00BB (fulfilment-id,handshake-token,journey-type,notification-id)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "&lt;p&gt;Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.&lt;/p&gt;",
+					"otherinfo": "",
+					"reference": "&lt;p&gt;https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP&lt;/p&gt;&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html&lt;/p&gt;&lt;p&gt;https://www.w3.org/TR/CSP/&lt;/p&gt;&lt;p&gt;https://w3c.github.io/webappsec-csp/&lt;/p&gt;&lt;p&gt;https://web.dev/articles/csp&lt;/p&gt;&lt;p&gt;https://caniuse.com/#feat=contentsecuritypolicy&lt;/p&gt;&lt;p&gt;https://content-security-policy.com/&lt;/p&gt;",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "687"
+				},
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "&lt;p&gt;A timestamp was disclosed by the application/web server. - Unix&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1532",
+							"uri": "http://localhost:3002/public/stylesheets/application.24ff432.min.css",
+							"nodeName": "http:\/\/localhost:3002\/public\/stylesheets\/application.24ff432.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1904761905",
+							"otherinfo": "1904761905, which evaluates to: 2030-05-11 20:31:45."
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "&lt;p&gt;Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;1904761905, which evaluates to: 2030-05-11 20:31:45.&lt;/p&gt;",
+					"reference": "&lt;p&gt;https://cwe.mitre.org/data/definitions/200.html&lt;/p&gt;",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "639"
+				},
+				{
+					"pluginid": "10024",
+					"alertRef": "10024",
+					"alert": "Information Disclosure - Sensitive Information in URL",
+					"name": "Information Disclosure - Sensitive Information in URL",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "&lt;p&gt;The request appeared to contain sensitive information leaked in the URL. This can violate PCI and most organizational compliance policies. You can configure the list of strings for this check to add or remove values specific to your environment.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1654",
+							"uri": "http://localhost:3002/address-book/add?journey-type=not-a-journey&amp;notification-id=GBN-AG-26-4F7K2P&amp;fulfilment-id=9ad1e2f3-a4b5-4c60-8d1c-9e0f1a2b3c4d&amp;handshake-token=handshake-token-value",
+							"nodeName": "http:\/\/localhost:3002\/http:\/\/localhost:3002\/address-book\/\u00ABaddressId\u00BB (fulfilment-id,handshake-token,journey-type,notification-id)",
+							"method": "GET",
+							"param": "handshake-token",
+							"attack": "",
+							"evidence": "handshake-token",
+							"otherinfo": "The URL contains potentially sensitive information. The following string was found via the pattern: token\nhandshake-token"
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "&lt;p&gt;Do not pass sensitive information in URIs.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;The URL contains potentially sensitive information. The following string was found via the pattern: token&lt;/p&gt;&lt;p&gt;handshake-token&lt;/p&gt;",
+					"reference": "",
+					"cweid": "598",
+					"wascid": "13",
+					"sourceid": "687"
+				},
+				{
+					"pluginid": "10109",
+					"alertRef": "10109",
+					"alert": "Modern Web Application",
+					"name": "Modern Web Application",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "&lt;p&gt;The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1573",
+							"uri": "http://localhost:3002/address-book",
+							"nodeName": "http:\/\/localhost:3002\/address-book",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "&lt;a class=\"govuk-service-navigation__link\" href=\"#\"&gt;\n                                    \nManage account\n                  &lt;/a&gt;",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "1630",
+							"uri": "http://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR",
+							"nodeName": "http:\/\/localhost:3002\/address-book (addressType)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "&lt;a class=\"govuk-service-navigation__link\" href=\"#\"&gt;\n                                    \nManage account\n                  &lt;/a&gt;",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "1633",
+							"uri": "http://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR&amp;q=Security+Scan+Farm+1794382770192&amp;role=PLACE_OF_ORIGIN",
+							"nodeName": "http:\/\/localhost:3002\/address-book (addressType,q,role)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "&lt;a class=\"govuk-service-navigation__link\" href=\"#\"&gt;\n                                    \nManage account\n                  &lt;/a&gt;",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "1531",
+							"uri": "http://localhost:3002/address-book/add/address-type",
+							"nodeName": "http:\/\/localhost:3002\/http:\/\/localhost:3002\/address-book\/\u00ABaddressId\u00BB",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "&lt;a class=\"govuk-service-navigation__link\" href=\"#\"&gt;\n                                    \nManage account\n                  &lt;/a&gt;",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "1622",
+							"uri": "http://localhost:3002/address-book/add/address-type?start=true",
+							"nodeName": "http:\/\/localhost:3002\/http:\/\/localhost:3002\/address-book\/\u00ABaddressId\u00BB (start)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "&lt;a class=\"govuk-service-navigation__link\" href=\"#\"&gt;\n                                    \nManage account\n                  &lt;/a&gt;",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "&lt;p&gt;This is an informational alert and so no changes are required.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.&lt;/p&gt;",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "658"
+				},
+				{
+					"pluginid": "10112",
+					"alertRef": "10112",
+					"alert": "Session Management Response Identified",
+					"name": "Session Management Response Identified",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "&lt;p&gt;The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1589",
+							"uri": "http://localhost:3002/address-book",
+							"nodeName": "http:\/\/localhost:3002\/address-book",
+							"method": "GET",
+							"param": "crumb",
+							"attack": "",
+							"evidence": "crumb",
+							"otherinfo": "cookie:crumb\ncookie:ins-session"
+						},
+						{
+							"id": "1574",
+							"uri": "http://localhost:3002/address-book",
+							"nodeName": "http:\/\/localhost:3002\/address-book",
+							"method": "GET",
+							"param": "ins-session",
+							"attack": "",
+							"evidence": "ins-session",
+							"otherinfo": "cookie:ins-session"
+						},
+						{
+							"id": "1632",
+							"uri": "http://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR",
+							"nodeName": "http:\/\/localhost:3002\/address-book (addressType)",
+							"method": "GET",
+							"param": "ins-session",
+							"attack": "",
+							"evidence": "ins-session",
+							"otherinfo": "cookie:ins-session"
+						},
+						{
+							"id": "1639",
+							"uri": "http://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR&amp;q=Security+Scan+Farm+1794382770192&amp;role=PLACE_OF_ORIGIN",
+							"nodeName": "http:\/\/localhost:3002\/address-book (addressType,q,role)",
+							"method": "GET",
+							"param": "ins-session",
+							"attack": "",
+							"evidence": "ins-session",
+							"otherinfo": "cookie:ins-session"
+						},
+						{
+							"id": "1467",
+							"uri": "http://localhost:3002/auth/sign-in?redirect=%2Faddress-book%2Fadd%2Faddress-type",
+							"nodeName": "http:\/\/localhost:3002\/auth\/sign-in (redirect)",
+							"method": "GET",
+							"param": "bell-defra-id",
+							"attack": "",
+							"evidence": "bell-defra-id",
+							"otherinfo": "cookie:bell-defra-id\ncookie:ins-session"
+						},
+						{
+							"id": "1530",
+							"uri": "http://localhost:3002/auth/sign-in-oidc?code=db42ae92fc93f4d264d692cad351e7341b5be0d583d76c637726206f7ce80348&amp;state=R1dpgS4hJqXuRg8SfcfnR4",
+							"nodeName": "http:\/\/localhost:3002\/auth\/sign-in-oidc (code,state)",
+							"method": "GET",
+							"param": "crumb",
+							"attack": "",
+							"evidence": "crumb",
+							"otherinfo": "cookie:crumb\ncookie:ins-sid\ncookie:ins-session"
+						},
+						{
+							"id": "1628",
+							"uri": "http://localhost:3002/address-book/add",
+							"nodeName": "http:\/\/localhost:3002\/http:\/\/localhost:3002\/address-book\/\u00ABaddressId\u00BB",
+							"method": "GET",
+							"param": "ins-session",
+							"attack": "",
+							"evidence": "ins-session",
+							"otherinfo": "cookie:ins-session"
+						},
+						{
+							"id": "1626",
+							"uri": "http://localhost:3002/address-book/add/address-type?start=true",
+							"nodeName": "http:\/\/localhost:3002\/http:\/\/localhost:3002\/address-book\/\u00ABaddressId\u00BB (start)",
+							"method": "GET",
+							"param": "ins-session",
+							"attack": "",
+							"evidence": "ins-session",
+							"otherinfo": "cookie:ins-session"
+						},
+						{
+							"id": "1629",
+							"uri": "http://localhost:3002/address-book/add",
+							"nodeName": "http:\/\/localhost:3002\/http:\/\/localhost:3002\/address-book\/\u00ABaddressId\u00BB ()(addressLine1,addressLine2,countryCode,county,crumb,email,name,phone,postcode,roles,townOrCity)",
+							"method": "POST",
+							"param": "ins-session",
+							"attack": "",
+							"evidence": "ins-session",
+							"otherinfo": "cookie:ins-session"
+						},
+						{
+							"id": "1644",
+							"uri": "http://localhost:3002/address-book/6af41bb28ae4ea5ce70b7ef4/edit",
+							"nodeName": "http:\/\/localhost:3002\/http:\/\/localhost:3002\/address-book\/\u00ABaddressId\u00BB ()(addressLine1,addressLine2,countryCode,county,crumb,email,name,phone,postcode,townOrCity)",
+							"method": "POST",
+							"param": "ins-session",
+							"attack": "",
+							"evidence": "ins-session",
+							"otherinfo": "cookie:ins-session"
+						},
+						{
+							"id": "1650",
+							"uri": "http://localhost:3002/address-book/6af41bb28ae4ea5ce70b7ef4/delete",
+							"nodeName": "http:\/\/localhost:3002\/http:\/\/localhost:3002\/address-book\/\u00ABaddressId\u00BB ()(crumb)",
+							"method": "POST",
+							"param": "ins-session",
+							"attack": "",
+							"evidence": "ins-session",
+							"otherinfo": "cookie:ins-session"
+						},
+						{
+							"id": "1620",
+							"uri": "http://localhost:3002/address-book/add/address-type?start=true",
+							"nodeName": "http:\/\/localhost:3002\/http:\/\/localhost:3002\/address-book\/\u00ABaddressId\u00BB (start)(addressType,crumb)",
+							"method": "POST",
+							"param": "ins-session",
+							"attack": "",
+							"evidence": "ins-session",
+							"otherinfo": "cookie:ins-session"
+						},
+						{
+							"id": "1649",
+							"uri": "http://localhost:3002/address-book",
+							"nodeName": "http:\/\/localhost:3002\/address-book",
+							"method": "GET",
+							"param": "ins-session",
+							"attack": "",
+							"evidence": "ins-session",
+							"otherinfo": "cookie:ins-session"
+						},
+						{
+							"id": "1641",
+							"uri": "http://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR",
+							"nodeName": "http:\/\/localhost:3002\/address-book (addressType)",
+							"method": "GET",
+							"param": "ins-session",
+							"attack": "",
+							"evidence": "ins-session",
+							"otherinfo": "cookie:ins-session"
+						},
+						{
+							"id": "1468",
+							"uri": "http://localhost:3002/auth/sign-in?redirect=%2Faddress-book%2Fadd%2Faddress-type",
+							"nodeName": "http:\/\/localhost:3002\/auth\/sign-in (redirect)",
+							"method": "GET",
+							"param": "ins-session",
+							"attack": "",
+							"evidence": "ins-session",
+							"otherinfo": "cookie:ins-session"
+						},
+						{
+							"id": "1621",
+							"uri": "http://localhost:3002/address-book/add/address-type?start=true",
+							"nodeName": "http:\/\/localhost:3002\/http:\/\/localhost:3002\/address-book\/\u00ABaddressId\u00BB (start)",
+							"method": "GET",
+							"param": "ins-session",
+							"attack": "",
+							"evidence": "ins-session",
+							"otherinfo": "cookie:ins-session"
+						}
+					],
+					"count": "16",
+					"systemic": false,
+					"solution": "&lt;p&gt;This is an informational alert rather than a vulnerability and so there is nothing to fix.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;cookie:crumb&lt;/p&gt;&lt;p&gt;cookie:ins-session&lt;/p&gt;",
+					"reference": "&lt;p&gt;https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/&lt;/p&gt;",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "662"
+				},
+				{
+					"pluginid": "10104",
+					"alertRef": "10104",
+					"alert": "User Agent Fuzzer",
+					"name": "User Agent Fuzzer",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "&lt;p&gt;Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "2475",
+							"uri": "http://localhost:3002",
+							"nodeName": "http:\/\/localhost:3002",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "2474",
+							"uri": "http://localhost:3002",
+							"nodeName": "http:\/\/localhost:3002",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "2476",
+							"uri": "http://localhost:3002/",
+							"nodeName": "http:\/\/localhost:3002\/",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": true,
+					"solution": "",
+					"otherinfo": "",
+					"reference": "&lt;p&gt;https://owasp.org/www-project-web-security-testing-guide/&lt;/p&gt;",
+					"cweid": "0",
+					"wascid": "0",
+					"sourceid": "85928"
+				},
+				{
+					"pluginid": "10031",
+					"alertRef": "10031",
+					"alert": "User Controllable HTML Element Attribute (Potential XSS)",
+					"name": "User Controllable HTML Element Attribute (Potential XSS)",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "&lt;p&gt;This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1631",
+							"uri": "http://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR",
+							"nodeName": "http:\/\/localhost:3002\/address-book (addressType)",
+							"method": "GET",
+							"param": "addressType",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\naddressType=ORIGIN_OR_CONSIGNOR\n\nThe user-controlled value was:\norigin_or_consignor"
+						},
+						{
+							"id": "1634",
+							"uri": "http://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR&amp;q=Security+Scan+Farm+1794382770192&amp;role=PLACE_OF_ORIGIN",
+							"nodeName": "http:\/\/localhost:3002\/address-book (addressType,q,role)",
+							"method": "GET",
+							"param": "addressType",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR&amp;q=Security+Scan+Farm+1794382770192&amp;role=PLACE_OF_ORIGIN\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\naddressType=ORIGIN_OR_CONSIGNOR\n\nThe user-controlled value was:\norigin_or_consignor"
+						},
+						{
+							"id": "1636",
+							"uri": "http://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR&amp;q=Security+Scan+Farm+1794382770192&amp;role=PLACE_OF_ORIGIN",
+							"nodeName": "http:\/\/localhost:3002\/address-book (addressType,q,role)",
+							"method": "GET",
+							"param": "q",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR&amp;q=Security+Scan+Farm+1794382770192&amp;role=PLACE_OF_ORIGIN\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nq=Security Scan Farm 1794382770192\n\nThe user-controlled value was:\nsecurity scan farm 1794382770192"
+						},
+						{
+							"id": "1637",
+							"uri": "http://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR&amp;q=Security+Scan+Farm+1794382770192&amp;role=PLACE_OF_ORIGIN",
+							"nodeName": "http:\/\/localhost:3002\/address-book (addressType,q,role)",
+							"method": "GET",
+							"param": "role",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR&amp;q=Security+Scan+Farm+1794382770192&amp;role=PLACE_OF_ORIGIN\n\nappears to include user input in:\na(n) [option] tag [value] attribute\n\nThe user input found was:\nrole=PLACE_OF_ORIGIN\n\nThe user-controlled value was:\nplace_of_origin"
+						},
+						{
+							"id": "1623",
+							"uri": "http://localhost:3002/address-book/add/address-type?start=true",
+							"nodeName": "http:\/\/localhost:3002\/http:\/\/localhost:3002\/address-book\/\u00ABaddressId\u00BB (start)",
+							"method": "GET",
+							"param": "start",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3002/address-book/add/address-type?start=true\n\nappears to include user input in:\na(n) [button] tag [aria-hidden] attribute\n\nThe user input found was:\nstart=true\n\nThe user-controlled value was:\ntrue"
+						}
+					],
+					"count": "5",
+					"systemic": false,
+					"solution": "&lt;p&gt;Validate all input and sanitize output it before writing to any HTML attributes.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;http://localhost:3002/address-book?addressType=ORIGIN_OR_CONSIGNOR&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;appears to include user input in:&lt;/p&gt;&lt;p&gt;a(n) [input] tag [value] attribute&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;The user input found was:&lt;/p&gt;&lt;p&gt;addressType=ORIGIN_OR_CONSIGNOR&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;The user-controlled value was:&lt;/p&gt;&lt;p&gt;origin_or_consignor&lt;/p&gt;",
+					"reference": "&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html&lt;/p&gt;",
+					"cweid": "20",
+					"wascid": "20",
+					"sourceid": "675"
+				}
+			]
+		},
+		{
+			"@name": "http://localhost:8089",
+			"@host": "localhost",
+			"@port": "8089",
+			"@ssl": "false",
+			"alerts": [ 
+				{
+					"pluginid": "10021",
+					"alertRef": "10021",
+					"alert": "X-Content-Type-Options Header Missing",
+					"name": "X-Content-Type-Options Header Missing",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "&lt;p&gt;The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1222",
+							"uri": "http://localhost:8089/organisation/5900001/addresses?q=Animal+and+Plant+Health+Agency",
+							"nodeName": "http:\/\/localhost:8089\/http:\/\/localhost:8089\/organisation\/\u00ABorgId\u00BB (q)",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "&lt;p&gt;Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.&lt;/p&gt;&lt;p&gt;If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.&lt;/p&gt;&lt;p&gt;At \"High\" threshold this scan rule will not alert on client or server error responses.&lt;/p&gt;",
+					"reference": "&lt;p&gt;https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)&lt;/p&gt;&lt;p&gt;https://owasp.org/www-community/Security_Headers&lt;/p&gt;",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "504"
+				},
+				{
+					"pluginid": "10104",
+					"alertRef": "10104",
+					"alert": "User Agent Fuzzer",
+					"name": "User Agent Fuzzer",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "&lt;p&gt;Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "2668",
+							"uri": "http://localhost:8089",
+							"nodeName": "http:\/\/localhost:8089",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "2667",
+							"uri": "http://localhost:8089",
+							"nodeName": "http:\/\/localhost:8089",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "2666",
+							"uri": "http://localhost:8089",
+							"nodeName": "http:\/\/localhost:8089",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": true,
+					"solution": "",
+					"otherinfo": "",
+					"reference": "&lt;p&gt;https://owasp.org/www-project-web-security-testing-guide/&lt;/p&gt;",
+					"cweid": "0",
+					"wascid": "0",
+					"sourceid": "88353"
+				}
+			]
+		},
+		{
+			"@name": "http://localhost:3001",
+			"@host": "localhost",
+			"@port": "3001",
+			"@ssl": "false",
+			"alerts": [ 
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "&lt;p&gt;A timestamp was disclosed by the application/web server. - Unix&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1279",
+							"uri": "http://localhost:3001/outbox-events?referenceNumber=GBN-AG-26-DATMYY",
+							"nodeName": "http:\/\/localhost:3001\/outbox-events (referenceNumber)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2100010101",
+							"otherinfo": "2100010101, which evaluates to: 2036-07-18 16:08:21."
+						},
+						{
+							"id": "1320",
+							"uri": "http://localhost:3001/outbox-events?referenceNumber=GBN-AG-26-DATMYY&amp;replayed=1",
+							"nodeName": "http:\/\/localhost:3001\/outbox-events (referenceNumber,replayed)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2100010101",
+							"otherinfo": "2100010101, which evaluates to: 2036-07-18 16:08:21."
+						},
+						{
+							"id": "1189",
+							"uri": "http://localhost:3001/public/stylesheets/application.038b068.min.css",
+							"nodeName": "http:\/\/localhost:3001\/public\/stylesheets\/application.038b068.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1904761905",
+							"otherinfo": "1904761905, which evaluates to: 2030-05-11 20:31:45."
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "&lt;p&gt;Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;2100010101, which evaluates to: 2036-07-18 16:08:21.&lt;/p&gt;",
+					"reference": "&lt;p&gt;https://cwe.mitre.org/data/definitions/200.html&lt;/p&gt;",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "543"
+				},
+				{
+					"pluginid": "10112",
+					"alertRef": "10112",
+					"alert": "Session Management Response Identified",
+					"name": "Session Management Response Identified",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "&lt;p&gt;The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1202",
+							"uri": "http://localhost:3001/",
+							"nodeName": "http:\/\/localhost:3001\/",
+							"method": "GET",
+							"param": "crumb",
+							"attack": "",
+							"evidence": "crumb",
+							"otherinfo": "cookie:crumb"
+						},
+						{
+							"id": "1163",
+							"uri": "http://localhost:3001/auth/sign-in?redirect=/",
+							"nodeName": "http:\/\/localhost:3001\/auth\/sign-in (redirect)",
+							"method": "GET",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session\ncookie:bell-defra-id"
+						},
+						{
+							"id": "1188",
+							"uri": "http://localhost:3001/auth/sign-in-oidc?code=a3316f59e0c24d5e31bb705c26bbd23161f94f21c075d7ced5370e5c9c5c58e3&amp;state=i4PRz3GKPhxssXU33IOSa7",
+							"nodeName": "http:\/\/localhost:3001\/auth\/sign-in-oidc (code,state)",
+							"method": "GET",
+							"param": "sid",
+							"attack": "",
+							"evidence": "sid",
+							"otherinfo": "cookie:sid\ncookie:crumb\ncookie:session"
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "&lt;p&gt;This is an informational alert rather than a vulnerability and so there is nothing to fix.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;cookie:crumb&lt;/p&gt;",
+					"reference": "&lt;p&gt;https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/&lt;/p&gt;",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "495"
+				},
+				{
+					"pluginid": "10104",
+					"alertRef": "10104",
+					"alert": "User Agent Fuzzer",
+					"name": "User Agent Fuzzer",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "&lt;p&gt;Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "2399",
+							"uri": "http://localhost:3001/notifications",
+							"nodeName": "http:\/\/localhost:3001\/notifications ()([])",
+							"method": "DELETE",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "2400",
+							"uri": "http://localhost:3001",
+							"nodeName": "http:\/\/localhost:3001",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "2398",
+							"uri": "http://localhost:3001",
+							"nodeName": "http:\/\/localhost:3001",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": true,
+					"solution": "",
+					"otherinfo": "",
+					"reference": "&lt;p&gt;https://owasp.org/www-project-web-security-testing-guide/&lt;/p&gt;",
+					"cweid": "0",
+					"wascid": "0",
+					"sourceid": "71557"
+				},
+				{
+					"pluginid": "10031",
+					"alertRef": "10031",
+					"alert": "User Controllable HTML Element Attribute (Potential XSS)",
+					"name": "User Controllable HTML Element Attribute (Potential XSS)",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "&lt;p&gt;This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1318",
+							"uri": "http://localhost:3001/outbox-events?referenceNumber=GBN-AG-26-DATMYY",
+							"nodeName": "http:\/\/localhost:3001\/outbox-events (referenceNumber)",
+							"method": "GET",
+							"param": "referenceNumber",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3001/outbox-events?referenceNumber=GBN-AG-26-DATMYY\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nreferenceNumber=GBN-AG-26-DATMYY\n\nThe user-controlled value was:\ngbn-ag-26-datmyy"
+						},
+						{
+							"id": "1359",
+							"uri": "http://localhost:3001/outbox-events?referenceNumber=GBN-AG-26-DATMYY&amp;replayed=1",
+							"nodeName": "http:\/\/localhost:3001\/outbox-events (referenceNumber,replayed)",
+							"method": "GET",
+							"param": "referenceNumber",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3001/outbox-events?referenceNumber=GBN-AG-26-DATMYY&amp;replayed=1\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nreferenceNumber=GBN-AG-26-DATMYY\n\nThe user-controlled value was:\ngbn-ag-26-datmyy"
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "&lt;p&gt;Validate all input and sanitize output it before writing to any HTML attributes.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;http://localhost:3001/outbox-events?referenceNumber=GBN-AG-26-DATMYY&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;appears to include user input in:&lt;/p&gt;&lt;p&gt;a(n) [input] tag [value] attribute&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;The user input found was:&lt;/p&gt;&lt;p&gt;referenceNumber=GBN-AG-26-DATMYY&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;The user-controlled value was:&lt;/p&gt;&lt;p&gt;gbn-ag-26-datmyy&lt;/p&gt;",
+					"reference": "&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html&lt;/p&gt;",
+					"cweid": "20",
+					"wascid": "20",
+					"sourceid": "543"
+				}
+			]
+		},
+		{
+			"@name": "http://localhost:8085",
+			"@host": "localhost",
+			"@port": "8085",
+			"@ssl": "false",
+			"alerts": [ 
+				{
+					"pluginid": "10021",
+					"alertRef": "10021",
+					"alert": "X-Content-Type-Options Header Missing",
+					"name": "X-Content-Type-Options Header Missing",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "&lt;p&gt;The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "152",
+							"uri": "http://localhost:8085/notifications/GBN-AG-26-FVSJRT/submit?concurrencyToken=0",
+							"nodeName": "http:\/\/localhost:8085\/http:\/\/localhost:8085\/notifications\/\u00ABreferenceNumber\u00BB (concurrencyToken)",
+							"method": "POST",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "142",
+							"uri": "http://localhost:8085/notifications",
+							"nodeName": "http:\/\/localhost:8085\/notifications ()({notification:{}})",
+							"method": "POST",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "&lt;p&gt;Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.&lt;/p&gt;&lt;p&gt;If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.&lt;/p&gt;&lt;p&gt;At \"High\" threshold this scan rule will not alert on client or server error responses.&lt;/p&gt;",
+					"reference": "&lt;p&gt;https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)&lt;/p&gt;&lt;p&gt;https://owasp.org/www-community/Security_Headers&lt;/p&gt;",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "81"
+				},
+				{
+					"pluginid": "10024",
+					"alertRef": "10024",
+					"alert": "Information Disclosure - Sensitive Information in URL",
+					"name": "Information Disclosure - Sensitive Information in URL",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "&lt;p&gt;The request appeared to contain sensitive information leaked in the URL. This can violate PCI and most organizational compliance policies. You can configure the list of strings for this check to add or remove values specific to your environment.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "151",
+							"uri": "http://localhost:8085/notifications/GBN-AG-26-FVSJRT/submit?concurrencyToken=0",
+							"nodeName": "http:\/\/localhost:8085\/http:\/\/localhost:8085\/notifications\/\u00ABreferenceNumber\u00BB (concurrencyToken)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "",
+							"evidence": "concurrencyToken",
+							"otherinfo": "The URL contains potentially sensitive information. The following string was found via the pattern: token\nconcurrencyToken"
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "&lt;p&gt;Do not pass sensitive information in URIs.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;The URL contains potentially sensitive information. The following string was found via the pattern: token&lt;/p&gt;&lt;p&gt;concurrencyToken&lt;/p&gt;",
+					"reference": "",
+					"cweid": "598",
+					"wascid": "13",
+					"sourceid": "81"
+				},
+				{
+					"pluginid": "10104",
+					"alertRef": "10104",
+					"alert": "User Agent Fuzzer",
+					"name": "User Agent Fuzzer",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "&lt;p&gt;Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "2595",
+							"uri": "http://localhost:8085",
+							"nodeName": "http:\/\/localhost:8085",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "2594",
+							"uri": "http://localhost:8085",
+							"nodeName": "http:\/\/localhost:8085",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "2596",
+							"uri": "http://localhost:8085/notifications/GBN-AG-26-FVSJRT/submit?concurrencyToken=0",
+							"nodeName": "http:\/\/localhost:8085\/http:\/\/localhost:8085\/notifications\/\u00ABreferenceNumber\u00BB (concurrencyToken)",
+							"method": "POST",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": true,
+					"solution": "",
+					"otherinfo": "",
+					"reference": "&lt;p&gt;https://owasp.org/www-project-web-security-testing-guide/&lt;/p&gt;",
+					"cweid": "0",
+					"wascid": "0",
+					"sourceid": "87068"
+				}
+			]
+		},
+		{
+			"@name": "http://localhost:3007",
+			"@host": "localhost",
+			"@port": "3007",
+			"@ssl": "false",
+			"alerts": [ 
+			]
+		},
+		{
+			"@name": "http://localhost:3000",
+			"@host": "localhost",
+			"@port": "3000",
+			"@ssl": "false",
+			"alerts": [ 
+				{
+					"pluginid": "6",
+					"alertRef": "6-5",
+					"alert": "Path Traversal",
+					"name": "Path Traversal",
+					"riskcode": "3",
+					"confidence": "1",
+					"riskdesc": "High (Low)",
+					"desc": "&lt;p&gt;The Path Traversal attack technique allows an attacker access to files, directories, and commands that potentially reside outside the web document root directory. An attacker may manipulate a URL in such a way that the web site will execute or reveal the contents of arbitrary files anywhere on the web server. Any device that exposes an HTTP-based interface is potentially vulnerable to Path Traversal.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Most web sites restrict user access to a specific portion of the file-system, typically called the \"web document root\" or \"CGI root\" directory. These directories contain the files intended for user access and the executable necessary to drive web application functionality. To access files or execute commands anywhere on the file-system, Path Traversal attacks will utilize the ability of special-characters sequences.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;The most basic Path Traversal attack uses the \"../\" special-character sequence to alter the resource location requested in the URL. Although most popular web servers will prevent this technique from escaping the web document root, alternate encodings of the \"../\" sequence may help bypass the security filters. These method variations include valid and invalid Unicode-encoding (\"..%u2216\" or \"..%c0%af\") of the forward slash character, backslash characters (\"..\\\") on Windows-based servers, URL encoded characters \"%2e%2e%2f\"), and double URL encoding (\"..%255c\") of the backslash character.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Even if the web server properly restricts Path Traversal attempts in the URL path, a web application itself may still be vulnerable due to improper handling of user-supplied input. This is a common problem of web applications that use template mechanisms or load static text from files. In variations of the attack, the original URL parameter value is substituted with the file name of one of the web application's dynamic scripts. Consequently, the results can reveal source code because the file is interpreted as text instead of an executable script. These techniques often employ additional special characters such as the dot (\".\") to reveal the listing of the current working directory, or \"%00\" NULL characters in order to bypass rudimentary file extension checks.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1779",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/importers/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,concurrencyToken,crumb,page,party,q)",
+							"method": "POST",
+							"param": "page",
+							"attack": "select",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "1780",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/importers/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,concurrencyToken,crumb,page,party,q)",
+							"method": "POST",
+							"param": "q",
+							"attack": "select",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "1781",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/port-of-entry?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(arrivalDateAtPort,concurrencyToken,crumb,exit,meansOfTransport,portOfEntry,transportDocumentReference,transportIdentification)",
+							"method": "POST",
+							"param": "transportDocumentReference",
+							"attack": "port-of-entry",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "1778",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/consignment/contact/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,contactAddress,crumb,exit)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "select",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "1777",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/consignment/contact/select?from=%2Fselect",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,contactAddress,crumb,exit)",
+							"method": "POST",
+							"param": "from",
+							"attack": "/select",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "1782",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/import-reason?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,purposeInInternalMarket,reasonForImport,temporaryAdmissionExitDate,temporaryAdmissionPortOfExit,transhipmentDestinationCountry,transitDestinationCountry,transitPortOfExit)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "import-reason",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "1783",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/transporters?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,search,transporter)",
+							"method": "POST",
+							"param": "exit",
+							"attack": "transporters",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "7",
+					"systemic": false,
+					"solution": "&lt;p&gt;Assume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use an allow list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a deny list). However, deny lists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, \"boat\" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as \"red\" or \"blue.\"&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;For filenames, use stringent allow lists that limit the character set to be used. If feasible, only allow a single \".\" character in the filename to avoid weaknesses, and exclude directory separators such as \"/\". Use an allow list of allowable file extensions.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Warning: if you attempt to cleanse your data, then do so that the end result is not in the form that can be dangerous. A sanitizing mechanism can remove characters such as '.' and ';' which may be required for some exploits. An attacker can try to fool the sanitizing mechanism into \"cleaning\" data into a dangerous form. Suppose the attacker injects a '.' inside a filename (e.g. \"sensi.tiveFile\") and the sanitizing mechanism removes the character resulting in the valid filename, \"sensitiveFile\". If the input data are now assumed to be safe, then the file may be compromised. &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Inputs should be decoded and canonicalized to the application's current internal representation before being validated. Make sure that your application does not decode the same input twice. Such errors could be used to bypass allow list schemes by introducing dangerous inputs after they have been checked.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Use a built-in path canonicalization function (such as realpath() in C) that produces the canonical version of the pathname, which effectively removes \"..\" sequences and symbolic links.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Run your code using the lowest privileges that are required to accomplish the necessary tasks. If possible, create isolated accounts with limited privileges that are only used for a single task. That way, a successful attack will not immediately give the attacker access to the rest of the software or its environment. For example, database applications rarely need to run as the database administrator, especially in day-to-day operations.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;When the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Run your code in a \"jail\" or similar sandbox environment that enforces strict boundaries between the process and the operating system. This may effectively restrict which files can be accessed in a particular directory or which commands can be executed by your software.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;OS-level examples include the Unix chroot jail, AppArmor, and SELinux. In general, managed code may provide some protection. For example, java.io.FilePermission in the Java SecurityManager allows you to specify restrictions on file operations.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;This may not be a feasible solution, and it only limits the impact to the operating system; the rest of your application may still be subject to compromise.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;",
+					"otherinfo": "",
+					"reference": "&lt;p&gt;https://owasp.org/www-community/attacks/Path_Traversal&lt;/p&gt;&lt;p&gt;https://cwe.mitre.org/data/definitions/22.html&lt;/p&gt;",
+					"cweid": "22",
+					"wascid": "33",
+					"sourceid": "3609"
+				},
+				{
+					"pluginid": "40018",
+					"alertRef": "40018",
+					"alert": "SQL Injection",
+					"name": "SQL Injection",
+					"riskcode": "3",
+					"confidence": "1",
+					"riskdesc": "High (Low)",
+					"desc": "&lt;p&gt;SQL injection may be possible.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1784",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-C36DWB/origin",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(countryOfOrigin,crumb,regionOfOriginCodeRequirement,regionOfOriginCodeSuffix)",
+							"method": "POST",
+							"param": "regionOfOriginCodeSuffix",
+							"attack": "'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1793",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/importers/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,concurrencyToken,crumb,page,party,q)",
+							"method": "POST",
+							"param": "page",
+							"attack": "'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1794",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/additional-details?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(animalsCertifiedFor,concurrencyToken,containsUnweanedAnimals,crumb,exit)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "6;",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1801",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/additional-details?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(animalsCertifiedFor,concurrencyToken,containsUnweanedAnimals,crumb,exit)",
+							"method": "POST",
+							"param": "exit",
+							"attack": "hub'(",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1791",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/port-of-entry?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(arrivalDateAtPort,concurrencyToken,crumb,exit,meansOfTransport,portOfEntry,transportDocumentReference,transportIdentification)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "13'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1815",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/port-of-entry?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(arrivalDateAtPort,concurrencyToken,crumb,exit,meansOfTransport,portOfEntry,transportDocumentReference,transportIdentification)",
+							"method": "POST",
+							"param": "exit",
+							"attack": "\"",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1785",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/port-of-entry?from=%27",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(arrivalDateAtPort,concurrencyToken,crumb,exit,meansOfTransport,portOfEntry,transportDocumentReference,transportIdentification)",
+							"method": "POST",
+							"param": "from",
+							"attack": "'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1810",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/port-of-entry?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(arrivalDateAtPort,concurrencyToken,crumb,exit,meansOfTransport,portOfEntry,transportDocumentReference,transportIdentification)",
+							"method": "POST",
+							"param": "transportDocumentReference",
+							"attack": "\"",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1789",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/port-of-entry?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(arrivalDateAtPort,concurrencyToken,crumb,exit,meansOfTransport,portOfEntry,transportDocumentReference,transportIdentification)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "'(",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1806",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/commodities?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(commoditySearch,concurrencyToken,crumb,exit,species)",
+							"method": "POST",
+							"param": "exit",
+							"attack": "'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1798",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/consignment/contact/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,contactAddress,crumb,exit)",
+							"method": "POST",
+							"param": "exit",
+							"attack": "hub'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1788",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/consignment/contact/select?from=%22",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,contactAddress,crumb,exit)",
+							"method": "POST",
+							"param": "from",
+							"attack": "\"",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1795",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/origin?from=%27%28",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,countryOfOrigin,crumb,internalReferenceNumber,regionOfOriginCodeRequirement,regionOfOriginCodeSuffix)",
+							"method": "POST",
+							"param": "from",
+							"attack": "'(",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1821",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/consignment-details?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,numberOfAnimalsQuantity-0,numberOfPackages-0)",
+							"method": "POST",
+							"param": "exit",
+							"attack": "'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1799",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/consignment-details?from=%27",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,numberOfAnimalsQuantity-0,numberOfPackages-0)",
+							"method": "POST",
+							"param": "from",
+							"attack": "'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1800",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/consignment-details?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,numberOfAnimalsQuantity-0,numberOfPackages-0)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1803",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/import-reason?from=%3B",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,purposeInInternalMarket,reasonForImport,temporaryAdmissionExitDate,temporaryAdmissionPortOfExit,transhipmentDestinationCountry,transitDestinationCountry,transitPortOfExit)",
+							"method": "POST",
+							"param": "from",
+							"attack": ";",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1804",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/import-reason?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,purposeInInternalMarket,reasonForImport,temporaryAdmissionExitDate,temporaryAdmissionPortOfExit,transhipmentDestinationCountry,transitDestinationCountry,transitPortOfExit)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": ";",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1820",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/transporters?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,search,transporter)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "14'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1826",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/transporters?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,search,transporter)",
+							"method": "POST",
+							"param": "exit",
+							"attack": "hub'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1807",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/transporters?from=overview%3B",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,search,transporter)",
+							"method": "POST",
+							"param": "from",
+							"attack": "overview;",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1817",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/transporters?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,search,transporter)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "'(",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1813",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/import-reason?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,reasonForImport,temporaryAdmissionExitDate,temporaryAdmissionPortOfExit,transhipmentDestinationCountry,transitDestinationCountry,transitPortOfExit)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "\"",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1808",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/import-reason?from=overview%27",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,reasonForImport,temporaryAdmissionExitDate,temporaryAdmissionPortOfExit,transhipmentDestinationCountry,transitDestinationCountry,transitPortOfExit)",
+							"method": "POST",
+							"param": "from",
+							"attack": "overview'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1809",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/import-reason?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,reasonForImport,temporaryAdmissionExitDate,temporaryAdmissionPortOfExit,transhipmentDestinationCountry,transitDestinationCountry,transitPortOfExit)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "\u00ABjourneyId\u00BB'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1814",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/cph-number?return=addresses&amp;from=overview%27",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from,return)(concurrencyToken,cphCounty,cphHolding,cphParish,crumb)",
+							"method": "POST",
+							"param": "from",
+							"attack": "overview'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1812",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/cph-number?return=addresses%27&amp;from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from,return)(concurrencyToken,cphCounty,cphHolding,cphParish,crumb)",
+							"method": "POST",
+							"param": "return",
+							"attack": "addresses'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1816",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/cph-number?return=addresses&amp;from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from,return)(concurrencyToken,cphCounty,cphHolding,cphParish,crumb)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "1823",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/consignment-details?from=overview%2Cimport-reason",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)",
+							"method": "GET",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "\u00ABjourneyId\u00BB' OR '1'='1' -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [\u00ABjourneyId\u00BB' AND '1'='1' -- ] and [\u00ABjourneyId\u00BB' OR '1'='1' -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was NOT returned for the original parameter.\nThe vulnerability was detected by successfully retrieving more data than originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "1825",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/cph-number?return=addresses&amp;from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from,return)",
+							"method": "GET",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "\u00ABjourneyId\u00BB AND 1=1 -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [\u00ABjourneyId\u00BB AND 1=1 -- ] and [\u00ABjourneyId\u00BB AND 1=2 -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was returned for the original parameter.\nThe vulnerability was detected by successfully restricting the data originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "1787",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/commodities?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,commoditySearch,concurrencyToken,crumb)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "1 AND 1=1 -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [1 AND 1=1 -- ] and [1 AND 1=2 -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was returned for the original parameter.\nThe vulnerability was detected by successfully restricting the data originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "1792",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/importers/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,concurrencyToken,crumb,page,party,q)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": " OR 1=1 -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [ AND 1=1 -- ] and [ OR 1=1 -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was NOT returned for the original parameter.\nThe vulnerability was detected by successfully retrieving more data than originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "1797",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/importers/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,concurrencyToken,crumb,page,party,q)",
+							"method": "POST",
+							"param": "q",
+							"attack": "Import Co UK AND 1=1 -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [Import Co UK AND 1=1 -- ] and [Import Co UK AND 1=2 -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was returned for the original parameter.\nThe vulnerability was detected by successfully restricting the data originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "1786",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/additional-details?from=overview+AND+1%3D1+--+",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(animalsCertifiedFor,concurrencyToken,containsUnweanedAnimals,crumb,exit)",
+							"method": "POST",
+							"param": "from",
+							"attack": "overview AND 1=1 -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [overview AND 1=1 -- ] and [overview AND 1=2 -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was returned for the original parameter.\nThe vulnerability was detected by successfully restricting the data originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "1790",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/additional-details?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(animalsCertifiedFor,concurrencyToken,containsUnweanedAnimals,crumb,exit)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "\u00ABjourneyId\u00BB OR 1=1 -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [\u00ABjourneyId\u00BB AND 1=1 -- ] and [\u00ABjourneyId\u00BB OR 1=1 -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was NOT returned for the original parameter.\nThe vulnerability was detected by successfully retrieving more data than originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "1805",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/port-of-entry?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(arrivalDateAtPort,concurrencyToken,crumb,exit,meansOfTransport,portOfEntry,transportDocumentReference,transportIdentification)",
+							"method": "POST",
+							"param": "transportIdentification",
+							"attack": "FR-892-LK\" OR \"1\"=\"1\" -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [FR-892-LK\" AND \"1\"=\"1\" -- ] and [FR-892-LK\" OR \"1\"=\"1\" -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was NOT returned for the original parameter.\nThe vulnerability was detected by successfully retrieving more data than originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "1802",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/commodities?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(commoditySearch,concurrencyToken,crumb,exit,species)",
+							"method": "POST",
+							"param": "commoditySearch",
+							"attack": "Bos taurus' AND '1'='1' -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [Bos taurus' AND '1'='1' -- ] and [Bos taurus' AND '1'='2' -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was returned for the original parameter.\nThe vulnerability was detected by successfully restricting the data originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "1796",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/consignment/contact/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,contactAddress,crumb,exit)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "15 OR 1=1 -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [15 AND 1=1 -- ] and [15 OR 1=1 -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was NOT returned for the original parameter.\nThe vulnerability was detected by successfully retrieving more data than originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "1811",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/consignment-details?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,numberOfAnimalsQuantity-0,numberOfPackages-0)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "2 AND 1=1",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [2 AND 1=1] and [2 AND 1=2]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was returned for the original parameter.\nThe vulnerability was detected by successfully restricting the data originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "1818",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/import-reason?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,purposeInInternalMarket,reasonForImport,temporaryAdmissionExitDate,temporaryAdmissionPortOfExit,transhipmentDestinationCountry,transitDestinationCountry,transitPortOfExit)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "5 AND 1=1 -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [5 AND 1=1 -- ] and [5 AND 1=2 -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was returned for the original parameter.\nThe vulnerability was detected by successfully restricting the data originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "1824",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/import-reason?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,purposeInInternalMarket,reasonForImport,temporaryAdmissionExitDate,temporaryAdmissionPortOfExit,transhipmentDestinationCountry,transitDestinationCountry,transitPortOfExit)",
+							"method": "POST",
+							"param": "transhipmentDestinationCountry",
+							"attack": "' OR '1'='1' -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [' AND '1'='1' -- ] and [' OR '1'='1' -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was NOT returned for the original parameter.\nThe vulnerability was detected by successfully retrieving more data than originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "1819",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/import-reason?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,reasonForImport,temporaryAdmissionExitDate,temporaryAdmissionPortOfExit,transhipmentDestinationCountry,transitDestinationCountry,transitPortOfExit)",
+							"method": "POST",
+							"param": "transhipmentDestinationCountry",
+							"attack": "' AND '1'='1' -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [' AND '1'='1' -- ] and [' AND '1'='2' -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was returned for the original parameter.\nThe vulnerability was detected by successfully restricting the data originally returned, by manipulating the parameter."
+						},
+						{
+							"id": "1822",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/cph-number?return=addresses&amp;from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from,return)(concurrencyToken,cphCounty,cphHolding,cphParish,crumb)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "12' AND '1'='1' -- ",
+							"evidence": "",
+							"otherinfo": "The page results were successfully manipulated using the boolean conditions [12' AND '1'='1' -- ] and [12' AND '1'='2' -- ]\nThe parameter value being modified was stripped from the HTML output for the purposes of the comparison.\nData was returned for the original parameter.\nThe vulnerability was detected by successfully restricting the data originally returned, by manipulating the parameter."
+						}
+					],
+					"count": "43",
+					"systemic": false,
+					"solution": "&lt;p&gt;Do not trust client side input, even if there is client side validation in place.&lt;/p&gt;&lt;p&gt;In general, type check all data on the server side.&lt;/p&gt;&lt;p&gt;If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by '?'&lt;/p&gt;&lt;p&gt;If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.&lt;/p&gt;&lt;p&gt;If database Stored Procedures can be used, use them.&lt;/p&gt;&lt;p&gt;Do *not* concatenate strings into queries in the stored procedure, or use 'exec', 'exec immediate', or equivalent functionality!&lt;/p&gt;&lt;p&gt;Do not create dynamic SQL queries using simple string concatenation.&lt;/p&gt;&lt;p&gt;Escape all data received from the client.&lt;/p&gt;&lt;p&gt;Apply an 'allow list' of allowed characters, or a 'deny list' of disallowed characters in user input.&lt;/p&gt;&lt;p&gt;Apply the principle of least privilege by using the least privileged database user possible.&lt;/p&gt;&lt;p&gt;In particular, avoid using the 'sa' or 'db-owner' database users. This does not eliminate SQL injection, but minimizes its impact.&lt;/p&gt;&lt;p&gt;Grant the minimum database access that is necessary for the application.&lt;/p&gt;",
+					"otherinfo": "",
+					"reference": "&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html&lt;/p&gt;",
+					"cweid": "89",
+					"wascid": "19",
+					"sourceid": "18732"
+				},
+				{
+					"pluginid": "30001",
+					"alertRef": "30001",
+					"alert": "Buffer Overflow",
+					"name": "Buffer Overflow",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "&lt;p&gt;Buffer overflow errors are characterized by the overwriting of memory spaces of the background web process, which should have never been modified intentionally or unintentionally. Overwriting values of the IP (Instruction Pointer), BP (Base Pointer) and other registers causes exceptions, segmentation faults, and other process errors to occur. Usually these errors end execution of the application in an unexpected way.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1827",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-C36DWB/additional-details",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(animalsCertifiedFor,containsUnweanedAnimals,crumb)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "ILPvoPZRJUHvaLqOQXvxGdMKDkIvucRMhGDjxdhykeDabGlLZQHAGUDFsbDuSJcAYuYhWsWdiYFMXNvtCsmiafixjkbDFNKCTnAKUuHehAVNvxBMWspindfOnUphgyXmQthsgYoAJFGcihgnaQOMLNyVnIdTSqnvUfVPvhPFwLjGQCZuDieqTYPfOTPLqXaClkcspJtCZQoUZxFYOWAYLPAFHZAUuMCBIDkYkJpcDnNZukNAweJFUIrSVZIomcIYFXYYmDQXfbTRoLixoASjRNZGkkkYygTSMblgeuDnJsfZIbgpKWxTshLhwNdDnhvFnfpsicbFJYDVammJPepjXbDCyTWiaXRWYPdxQHITvyKhMPHbJdELfKDBLeIvmTFVBtlpjjgNrdXFRERSyJwyumjQEFVMYNiRVdHgKwrNrnfoxVFArWlFowQTaSEqWXPPcuGlnykkAQuUhqByONlmwfwfYDqSarKrWMSpMTnKhvtlNiXeClMRYjosFpjfNqcGmKVVlRDixGDTrfUXNjntCwwdhbhrllHwmffyxXieBWvHxTcyyfFNcbvINJftDrCqLGkupDlFdDaLZwMObNYIWnSErYatAAyDuAuhdHONcQnJLDYCGClXMsiZPfAxOEeLkWJSrQFcvXZDtMlKYWmZYXAaUwIouUaCNjhDpEIkyUEoSoSWuoEOjwlFrTAQxaxXdusofksIZsUjpsbHLUTCffAFplajOdajwImKSSLkKpteQdymLdUlLmDWkRSEgdSyQwWhAyuTWkJbrKHNJWkXHCAMmlAiuFPOmjsVTZZxUTMXtupoFUVBuyaQPyugIpOLpaKNNrWYlVwIqwrELkZYRWUsffICbMgvctrWBYpOJuoMMNmVOBrVuiPiZKyrHcgsGKUyaertDNQjsbTdRSlwslRZlmiriQCMecuGAjawAnSNnbwjOnPQKwgjUvLRPPDXVRnESwSrGRRIsqaePeOFChghHhbeAqQTOgENIihdgJGwHQFoEgqvyglClYcrSDDPSHARjAdbsULcDtxqEMWREDnSYtWfJTgEiKtgdqEGlyvnfATiYrhMnUrKmTyQFqKquKLDFwkjcDxfMWqSktnxMEBCbMmNWlybDcpnOSAnJhJSbVtmwRlQHbZKAGifHKmMNUbmcUVBulFQlOTseVSPnhbnvwIxsLbykUnTfeFTbXjRBBybeJVZFCVLChCEqYvXFPTuuBRnySnvFkQedCWNdnrWcMEntxDbUnOKJrjvWisriLQhRpRelZKxpitPrNkUHAFOFUXnqJGBQqwTOgRarWFgTTVSlxLiXukfgyBMiwOgEjaSmYcdsnmSEAAqEKvSlThyWFYmnCwOPYCyyEkiqIXVbisuTibOpPluPUdGdGXUELyNtuWrmwYBYgPYdHuiFblorCXprdDqGsVcLCUTLiMNiNLXgbNePMDSrWwyyxygghypcLWuETQWqmRJxbRoyfZxIuGoEPMLmjoFdfIPnnuHMOiVVrrQoNOOtxSoQOoaWmQTAloRONUhqtDVDEUwJdfeeSxjPSfJWKgWlNfOsZKUeACaBKkqvaLMyAWAWGnYAPjPuEFgEwYQwDcNJQqxgWSlWQupIxUfwHiIPOGyHLPVtktdVLfdXGVdmbqqdNIfpjLNrlfBRLkTVbbJkcVqAPhKXbAIXApFJCMpqkacNkMhXEJggNAuCdwLOBEPeuqYtZcuEBekkORNsJEqKkGAOWlEFKTQasCnPGFakQyyZbMsaOjCJyYSDFmaqjXXESepwiqGgVlpjosoNTdTwnSOrBqRaxSDOgBtOTOkVwsEIAVFJGZtiUJoRdDKRpZyIstmEPJFrIKsEWlgWZmZqaQpnygNiiCDUEFgpgPDXvDLrPhXobuEpOqdaXCCNWFbXawOcsgDnUEqBbGuffxyuiyWgqYcERSFQSLVRltYmVMUesylnPfkaTacuwUuuVWnfCsipPdPSDroytblkKOkdvNjhcuLSFqncTXMcTqPsyygXBQXOZFeZyMfRYRotuiqhkuZdlIkujPMXtMnLILcaTtvuYgLsLZtPMwfyapoKASaFsMNICttjGhoNlfyDXRWpcCrLexppInB",
+							"evidence": "Connection: close",
+							"otherinfo": "Potential Buffer Overflow. The script closed the connection and threw a 500 Internal Server Error."
+						},
+						{
+							"id": "1828",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-C36DWB/port-of-entry",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(arrivalDateAtPort,crumb,meansOfTransport,portOfEntry,transportDocumentReference,transportIdentification)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "pjgdBQVXJBLAlhXAelyBIAYcKSRVsQxpkyVXKLhJFROjftUFixVVaubtYqiPIRJmFtkxmoTGUOgSXiqflDLkRFCmxZgnqecsgeOmrWeadOrSlrDHwRJNuWgEHNMMWmSkudonHhpjgKpoivqQFDqelEyMhWChiDJwAeVDDvPXlmFNidUoYKCdkTvBOfqZTfIJyZCfoNyNJyprxwPMbeldCGXXjTIURSxZKBIOZVLMUgFTjvEfXbQgkSKOlZiAQgfePVsQWfqlZgWkeUlpogHGmSQZEEhtZSyecXioLcvvDxlKoCNCcpqKPLkNGleiKgHHNlBOuqraSqaWRRtXtlOoOGQCMLqWLFgtAYNeMndEeAughnTSNDZpNkLJHHcarbWXHwZcctdNdRVdHDqIERYLiZdeRyWPWhTduoNPxhegVAdkaUCFgvLtNiXBhoBqLrowOBpnVDrZrJAcamfbdZRARdNIeFuXYoaoRQAtToojJBdKKfPcMVOmOPKEVVrIKgCuJkSVFKTPxsecjJhYrKuQicpUnPiDhufmwTnEDXHWQpAYPifwOJMxcUnxHjsuSgRfcegGDERJtiyYVOvMlOIGUCMHeelpTGNyyJQdFUOGQnDFYDXgXnZRavqgbsSbfmCEpVARuJPjMMlEQZqSaQeojShZJbDYjGgDcgVVfCBkmkfqHYIhdlNruFKtGYHFjxbKdEUegBAOGSXOjYEOtCOXaVmBLXpAhPwErGlWgxXpnwptUcaCueuWJjRNaKWgDxFMNuFGMyoxlGWNloyKmbsfYOWCyrQhLECBAmkoXGqmLKFxmGJjwhuwMxKULFniSZgNKiiShxHLrXwDhlgxkhpdMGcBBvNIpGHjvyNeLCmfsHaNWDByAqukieDipSSZcqFasxadWHQmSjCVEsgOsvZfFyMZekFtRuNlxBUpFYIyWZsDKtFdcyvDySOiQuZEeJMQfCFOHuwnSmDaXKDwtVZRCGefHekvHwlBDdixHovgnupDydAKZsqpLqBVQNCiARYkOYLjqZPPAWyURPUZQpgrVOWktHIjBUUaohJDnsvByTBxttkBBlUVotQJZnhlvnqAcJwVcOLQndAEmeNjJDgCJlCLEZsSuCJnkMxXQLNVeRHSwoouGxhHOmeDAvfROxVFVyIMSkRIxnOBxvVkFXerFIkuidxRqxjkHhASaXpTYKUlRuXDoxuPSYWaxiAREVBdyuObMvmMCZYYwJqlmhVENGAovZJeHjWwsuNweHFtHxxFgojnlElkrcJwAPUKsIaUeMEthYcZWnUQRNCmJMQPhGZKxgGGfhwiwyFLVpqnmmMnsIhURIvjVdmDjZxyYltXIpnfaGwAerXoifcfKggOkhXRFkhSUOROUfhOGrbthdQQdKJvBPIGppRTlLAXKLJCoNGZnNNIDNWIkMkOIXhaBICteAUQILlMnCKtRxMYmFIHDGBTMhVGnaQnLfmxZiKPuAFNrvYeyVOUkLWChCUjnGSfOyRaZoWIxJuLdwlgBLmvtZHWsIYOTQQMpqioXaXaeiIOuQMkFxemFrygNVVuUquLNQDHyMjGpnNagVOVPZySSgdMNbfpwqlUylvFIZtHReaTLJKKkIWkwTkWlxTInlneBGvijScZVpOgYHndumYtEOfMGEbXqJalSYrUlqGZrQkBIVBAyJRYTFsgmruiZwUeIqRLlOysFpThUQSLQrDeAiUvJgHAoALBnVawlQNexTMXcIFbPPUCTdXnehDLDnSBPDwJrZQFnYQNZvBLVvanFgRRLGDFYCPXkyeexrELWCeoxBIgTTPKsBZdDhkVMRfZjQkjlvhUoxIDynGJQoOPOOdAfvvocOeTJjaNnwWcqLMZfRqUWgJodFbCYQDPkBjIOrpHOLBnrfcOlqhicfheRXSGVSYDYZVOTwBHTYZVZejmjGslvjaiZdVRpQZGOrcbWsZQtQlTjdPsHnpSPHaJbwidExsHwkHVhGpsforxphAnmRYJlOBJkPTVYgVMdNbrvXqGpXkXKjxULWqxcjFnDZdNEXWDnykPqsTFKHqNPwNjfacSFvunKDBEGMlZZKhUjruDJtkGWQmrfhGyIgkdrApXrMWC",
+							"evidence": "Connection: close",
+							"otherinfo": "Potential Buffer Overflow. The script closed the connection and threw a 500 Internal Server Error."
+						},
+						{
+							"id": "1829",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-C36DWB/origin",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(countryOfOrigin,crumb,regionOfOriginCodeRequirement,regionOfOriginCodeSuffix)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "CNqgtEtWGOPEUvqAMdqtgeSuoJlcSvNvDbgMSfuhDZlZFWpMEWRNRZaioUKRBfUujTFWqjrdCZuQEHTRxDvwdloiZWprJpERuBMBUSNCpDgiDwTxyZBDiVHRMmHyXZruSIcmeXxOBoTfDrCegfkAIFYxViKyBLAECAMTnqGoOoSWHjRrFEReYYbqfDVpEvkZwJrDQMCWPLOhPxRcuhYZKmEQCgybuSuCEJKmwGjhFlduSeovnMuJgxjEoNUekZZkhMXNkoOfqMFSHPZZWqYnEuwEYbxGOKcgvgLraCYnXBsROaQcdvXTcDkVVVbrWGIKKZGkiCwqnduEfSgWGgLfQQpllQVWqlrmuovuJgULEuAkOSyHJeSCNjrqPrjDWuXxBoqXnUdIXoyAqEUoMkOrjmDGjSmcSsJGxplZnkIpKvDekwwPaZVjacDcyUQEYFYTsiZQaKfctGVsDrlbDfeINiMYAcLHHVEMXBUaARqwBouECUSvALeXgqHyHwcpweWAlEoJaGoPGCPQxiOPRaJWjcgOrcvmHeLUsnqaDNilyppDFpxZBoXhcgbInfleZhYSTveyudMPoBnsKeIZtuhmaPhibsEZRsVuoHVSvymWyaObHapnyVtfKvJTUMtTKyRSoFuslnmVZwjQnQuUXiUVdEigyyEREydiQSSsexiaxTqZOtJRBHnrCsfjOGNyyawjoXXblDGDsaaTMYmtGuTGQRenxXgqbwxtYryxaJPyxrKeYXwqMotcqdvgqgmxIeoseYtmYPQViosAYwQVUiJgGUmnJReUprHJyYnIKDOHPykGLpkuuIMoSnHJDgjNiyCqkUTBUdUjVyNZXaDRDhtqpthxtdYOvnRxNxTxJnrditONIsDwFjGTTTZWAKaaaBWWGCelawuhBmZkEkRPiYtxoIEBWRwKPJHqqVBNiiPPtJqUkmJZnTsDaKtwyGdrKHYjJSLmIRvyFXTOeWXxbyVBgusvHWmNUQUeKFwbvgVbUKbRrZHCEELkLELuyXnwBGEqPgjessDaUFwZrFJbpPcTUSBVmCbAuctKCFKBtZluiIYAlFqTrZSlgAurEWrsPBCncqOVPgBhRQYnjHxHRTcBsvTwYgbkwqMAOVeSUCPxJFBUtbUgualwBQvjKhKgZqLQpCdATcymftcOEKdSmDYmbRwTldTHOpqJrZQvOfZFcXDEmBINjIkeNFtavnyQcgsHMudYGombDiVwkutDQgJMHFgLoRofkmYEofpVXFlehFqOAhtGirXoYhKsrCwwOloBdDHdcdZLiXxxkiwLTeYrWMJlpaXWcekcbxRMmJssNiOHPvufQnHuMjATHsHxmYWErGBXFlpDvyAsRwoBBTEvuCauaRErqnxiReEcMCRRnAOBBWvbGNqOywCpnBlpGbULwtRYoPHxaOlxICVjPDVWOXggtOBHsSyMwSgQMbcIHbCaYqnkcrqcIDqAWWOxkQFxvItgMTsTIYbhYAdtydeQekIPvXZTbflewZcLYuvxSvAQsxwYoTkKsHjDGUrJTJatOyyLwTBUXysnlkmpWmHYhixNpfVAnQXEBJIfAmfAkmKtvIvSsiONHSOSLOqUtVIWlpmvthUbBTTofqOJKpadUgYKlJWfVWXHIxSbXToUeDuCTLiTgnpCFLCWysgXoSoxjXNPUTXoZGlUcgohHKPLhXdjfhYPHQVaNkZJWmcthPtYuUMlwSwBYcEEGCAufVomZCUnEQlVtQtmykotmjZWdqehOSOKTKOtmrYZkxewxpteGIFEUemaxKbROUURXYHPeuWtGsWOuIwqsrvAMiGJmcZbmwHeeCVraSakCfLvphQMmOdDigLLwmJXuWFnpSUIUgmEpgtryydEeNAwGWlbfRqNWecHiAsciAAkbTMRGeUwkKLPArDuMJSlPXKbedtCAWXmvMKSNcHsNbLDoUfbxHOKxcTxgHvHiJiyEMFaoOZeoykBBMLNHSgigBdTErpHoQirhYMmiCJUdxAoCbxMUoJLgAwtXOHRGClJbYEIUWiRwLZafFoJBIPvivepHOPBNbmiJPOHZNokwFmtPXgRCFGcQalQAusWxHMCImeoGsoshpnJDTjW",
+							"evidence": "Connection: close",
+							"otherinfo": "Potential Buffer Overflow. The script closed the connection and threw a 500 Internal Server Error."
+						},
+						{
+							"id": "1830",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-C36DWB/cph-number",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(cphCounty,cphHolding,cphParish,crumb)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "dmQYhUwmPTeguCJMIMAEFdYWEOsnZgMdZMUVJNDpFMDYoQHikUvRDlyaZRlqnWjNpblVgOePHHgNDjnCfMGoWNpFcNYBPnoDXrbTvydgfbyBAuwHEkFNgLQaVoBFNwvuPYXDFTEosEUUCctOhlQhMHnYkSGIbWUdoyaZvoAwVYReyAxovPnKMjhUiIkJZFmhNQPReaJDUQoXgcBhxdBaWufOjBOamadmkWpGPtxqJjGsfGXYdAcFSCNTNnssrJZgsuZcHxhQUZDgQNEHttcZofHtTNdtyEaAcamZKZyIDAtfwMKbQxcrACPZXNoLsEjQIUuwUJjqICQnDaWgVdRviBmFMJLWbUDuKxZAmqljinpQtlGgKGAIqrVdyuHAjBKNFbKQMMdtjWQBKcOXPulsXfBmKyLClOkLculExSIWgCRSNRnmdFUjYtbkjyclLhdCxfvyvJHECjwGpHVBuuYhCXDtiuWTusGZEpSvlVGBpwYBsgSmiJtbuNMbaKhbNVPybliSrfchuOYaDfPUjrbxyvjodiRvaKhBewSnPhivbZBAETpPqLKFufhqfWrwuoPSuGDWyfLtwaaTvHYPINOFGMwgpocXhxGASrEaqEccUFqRueoDhtOqcGHtZYwDyhnpeOqDtaMrpOYLWdofDPGJelaEfXAAkMtjFPbelsVnVfHkAneLYuFAgNRuQVewFkmWEXhxUMaklPtShDSaSkJGOYPkfvIrfxgSshOVEdRryjHWFVGrAoMgNvgiaOwPakGyCFIUMSswGhdqooJBSkansYuEfFroSeOBHUSMrnGhtgHAxLYnlwdHilIWJuORRirBuFUgFPQMuwLlFYeacPYTpXdkALAGSSNRGhnNaWwTmjBqinSagdUDeEpsMFwcbCHKZQGWqLcCNICjNAVqgLGJaQhVoLrejQtDQJVQQtMjTmZcSTYZNIZroBenkOZQrZOkiUPySYdHyyuklyqtVRJsosuQjebtJlxYfeKvIIyqGeOQOjCGSHTexZCKEdVbrNfBdmgEmQiNPeImOvVtSHnRiTNgmwnsGnFQveducqXcEMQqfArCTOWNcmWYtRfVGalcNCOZoDsePjmjPygjCIsqwudZqZgRflWjmErGjBUXqwnucdovdWCYagAUGNjJaYKEaykeTWQlRlHaldQEIcnAfHgBcgugmYaNFYaaqmhwfiUJXcysQEqYkdDncjtnJOatEklIVXuBVfQFYdTtSGiooTjwRbIUCTxXhEAeDyAcDlwYRWIrFmJJtYTwkcsgKQqUulqApUsTHmMtabBgoCwcKlRnbTMpjNXKOBXYqJrhYMqTAeRwMiCPJTauHeecZgYsRQIRkrqLDkUCptQIdffIZuOrDTaeysnqEEqdOEKhmdsmpTcwOlPCGtjDDgqvWfBTKuawjDqORlPHnMbmYqWGxGyqgMPGWtXqRIKmxEAMXMUFbQcnxhAhnhYRleCgihRvQOPLynAOlijFgnWIidDBkWHIDoKKXyPrinQslmvNBPFcoXfuRWQfsDhKvgNtcbQlPRQWlbldQfoOVNaZGMmWlHdmmqSeOcFUGDvEGcvDyyvilcFEarhuKPUsnTYydWBGgNitSatoeWGQgvRqlGhLPXEUdGZumtrKPmxHvoppQFDAvKZvtHHgPBSgFwAlbDcqOYVpEjkYDIeREtvJdmaSbuSknUTgjveZvpmJdqBSTakxKfaSJEcLDIKaGyWBQNNroAdtBZIBejhpJjCWiaKmPimaVUYJtmWTjbQtWeEIxGvslccBiOkcgkLKufPRNEshtGHcKUCiQEqDXEibEeIEIiSdcxXaLvltHQnxdvWIUrujVHTkTDlTkPjWyONwcQoHAkRDLfsjoKGcwQMQddCAYMTMpJkhqJJFeTngfFBUapqenkJchhLNtRvdJZWXTQTyHSuQnPnbXxQxadVstYNbQtGfEldTPqIrsCbLAsmjmVZdjeVVNRaFvtQJxJbZgQRydaBsFbqsTOOQijXYVFePqpdpuZDHfxHAfoJlsuOcKBZgsgEAsMiBYbEInahmThhPjRaVHvcpJHTyuvoCvsLblVvxiUlIhxlEUdwMoHqBLJTXQUhSnSgX",
+							"evidence": "Connection: close",
+							"otherinfo": "Potential Buffer Overflow. The script closed the connection and threw a 500 Internal Server Error."
+						},
+						{
+							"id": "1831",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-C36DWB/consignment-details",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(crumb,numberOfAnimalsQuantity-0)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "CnukkdViMnOojrXQFrMAswxPOYbHUdnseGGKAMPyVXKZtYVKudXQNKAcUByaSPeAOVwGGDaAknPCtVPVxZnddqvnBSWYfYGxnxFhdTaKZYIJCJdLpKQXJulqOicLBYEfLcgwtwGSsJWueZadkqPQarUedTnolyJiEJAMwBOptcJdyPtrWxZZXOAHuhELqRRwPkYMmjkZBkxblHUYLtGYnECPWyKhCVCpscyRWeRhLxodkjHTPrefPFPYpZpesGkfgjenJdGpxXWWBIXqVDStwFTOHWmPeKmQHTwoZImkctsRDZeANaYPxtpBqpcNIpNvdamLxmIEZubeDcdPydaTBgTYBMdXPywXeKFSnylinAQaFwwwcgtBDNnZgaGRUAZqbPcQKLxkmQFoRZZfGZiKtNSRonJabFOBkrmJFaVEkLgeCsZDbuIAlLSRddpynrNSgoDTgwWanWRMWqshrdtRenLnMuvCRsERofBIwhAERlFYDlmCaDwnhZHXgulNtydbEfxVHgTEdlPpZWIMpaPDOVXhvNBxsvXySYXIGTPEZqDJAOyfDUNjnJPVRdAUniXuKcohoRjccuYRLejZAJQusfCOPaIatiAQfTVaughTpAwMjmMXHNNGcmcmYgHvGHabGoUXlFFNWxBDOtMeJOhNoFgmQflNTyIgjXHILGNSlNEdpaZoUeDuujKYTubIgsxLBPsMeJTrWJpdfnMMVUMOYMHSKRxTQoIpuKfecRcvjHkZjNdQQgmKEwJXbEFIFXVnUsPVKWAENLdVotbtoEoqSyCTJvExGBbyVJEPeniGlqUUqiHnhONaWPEQOWdHwGCRhgZpdblgNuyLTKTJJRDOpeQRXBnBGfkTvvSfDsuhGqQIWaajUocelDohOkxZBIesLpPQawXQeTLFhfLBpjKiyugcHnGnHWbvBjDJBooDnVQiaKiqOJBlCHCVHFSWmohjuLiNpGJHjxwwLJvAufFRBFhNZyCAFeAvRFagxxLbCgqDIgcnplygWpDGwuZiSOMaNLLMZOXgBKWOrbcJjcBIkfRoLJqnIllPrwWQTuRnrSYEpDXDZLDDCAjIVMlxqPecGFTnwjlEyEcvpsZOKuLPIZWgDIeejxSZcTaWorfIwaUweHsachKPnInKxBcjXNETNoCLoUGfFMoBIYZwqlxcDjSWruDYOcJurGMeKUjCHuJGIhyExmHSIeocidgpEoOhTLMsjOlaLGLLGfEkyuhIDCfxSuAVbQxCAcsbTtLFFtaQwkxTcrxjtgasRkWswJOdeNUbYMnFuBDovQQntDWMLuBCUXbbaXTTloIiXaSdtqhnyjBtsOFGsLtlisLgsWDmbMBlWoTwlpUVIoCiavFXnemhfCKsHGgHfVxqXmBXfgjJxTeYLWSqkydDXFrDpdQvKbtBDVeNvAeVTKNGVxYcwUeVJYZcPhUkLONvPWVShmMqTFYRQaMWfBTtNXJkrabwZYvUwFNNOPxGpWnxSdmeSZLOILOtpwTkMZwNVjvKckiroHtFQwQAHVuLZCnNhxspDNSdhgqEaXXIJCJTruqshrIVtjiNPlKQWitFTSeibnUZsKscjYMZFeUDapbPFfZYUlJCNkPXgitsUHkoReXWJXmoEoyKjdXnpgMGYYCHZHMrsETPWNZLKZtNaNMWweKtgjAJSSehHDIbDqHtjovoCWawcFwBGWjItyVcKrQhRMLDpWdktHQZUpbeaFcsYXtnrfLEjeKtHlTVDsFfoulgXntbQvkbjtJKukCoeijCQTMDcdVyQQAJhstUMsmbnLvpadIeGCkliKNyIovDUUUqYAiCmYDSkNUoVvpiBJGIkgDUYBMcftJrXNRSrboNaRDZZbHybxluOmtrkosClYRwssVKfoLenwSvMLNSnGfjjWpvWhRGiVeulUaAwLFvjCGYbLfdkYmchlLnPuavrBlQetaJkUTCFGMFoSAWxikydACwwqZeiXLsnSVMkrQMKcTxCsMvIGDSGrjLXkTdbOWkiASwnByGrGTWAfFxXIyLachvxYEexVytWsdgWJIfqTwKbyKxaBmjAecHUkUXEqVqwHlGSjNHIjnOcqnuGCXSGUBeZSqKhNaJ",
+							"evidence": "Connection: close",
+							"otherinfo": "Potential Buffer Overflow. The script closed the connection and threw a 500 Internal Server Error."
+						},
+						{
+							"id": "1833",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-C36DWB/import-reason",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(crumb,purposeInInternalMarket,reasonForImport)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "YOggirYJVmvtVnbVRakVYPTvCFoHRmHrySDPqOSrXOybYrjWeYWucOpysZhcSYDknHMWebkttPkhERgWSDRKxfZONXyvSsGbcptKNAhgGqccvlXYtYDgoHcQjaBAZWpdEbmZsrsjTETrmFMLvhLywhIHNSXNEuvxyOJsRhoNhfrNKXSnVqjaqHCKKPPoCFJTRvusykysrZkbyhrFWPwFpudCQGZqEDjBDMTWBSUbYxVXxjXiLIXxgLDRJcnsqkxarpjNHUWgcsSnmLSVcSatKYPtUtDuHcDASXxruiyvDInoNKclFtuocGmPlGxWJoXeBKIYnlVUiVdGQAaLYCPEcIjFKMaEyrTGcGEKKnFXrgHBtaHEqNyvIWbaWlBKDuFsTuoxJxwPWFQfUGFlOEVoLxUxnpwEIPTUvbXPwCPFixeOITWMdZiMijdwQseWtKNTlsoNjMkvVXHTmFSUnZvJGKrEfESVGUOrsHRtnVYpxygtbmVNMjPZuffyIfSeFFeFoZGkOnIWtAjiRkSkEFamSHfakvxbNLfcHOarvVVOsIUweDBuCnPXKjYWIjDYseSlVkIApLdVrCHbIRJFwZmniWvBNTLJYuOEyHqtyOUqNqTxLEZtxGoaUiPjHmYKZfrJjWdpoFsoZmqoiAUZhOBGqWcLxhMrvwsQeqpMOyUsKSCBpOGEOYfcrpiHZSosLVRUJHISRSjmRMwFWuluHmUOtIKKIGvgwecyCrVeftJUcXjKsAYmDNgUyAMtnYijhbcoAuYtMReAGdGWKrKslMaaPPrJRVjyGkevNiAZaQmIYrjNxpkXJfOsfaqyYHOHKYWeCyyAOCoABuseMywLdnyiKymWKfeUyJasDVODLnONKPXprKIcNeHJgcWtcCIxKUJlsKMuCbfnSSOLqrJIBgwJmImlyPSSlBVKfDsHbClRdqliOPrajGsXkLVFnbwatMjqhnlUKdBTvkDiPXJymOsBVBKdAPHiNUWQUxVltmyjSWScHHDAkwWlxPZVfZEcQkOVRmEPBLdDbsnglTkcZHSgCnGWvUCYAYwJnOySqutKLKTFscLkFSZwRWKOQIsgnhWQKUlmFBniFflcrAuuRdsCQcKhDtRYXMCBjGggmbOaLaOIkXAUewRfBbROFaFRFdlpEhaRWuOTeFBGPPNRkUJXNfNbVcfXSDtuiXQXJCKRxGcHCQIcaChjiGTyPivPVHHevdEIlIIEfQQujsTdBNCXpCnCySLZduAXlkxcNCufmHOqAmPjhwuObPrjJHFTmttTrrlLFiOKQyqhIfXPlNSjaRcvJlvGYtXInKuVgZoJDbjpZZbXGNpkNuboPWjeQbuTFmjskQhBOUSkqQJaIfxpswTsgNHwUKMPUZbVqLcYpQARrfpUKPNilZbatNVFJhbcXVKTRFcrdubMEsPQUhmZwnCvqcSXoqWLntyFLaxusuZFwObbkAbvsIABrpEECglCGBqrySFIGQxOYfmPtpCbfLuyQwxuGaMqoivChGmGCtcaQpWXRoSGcRmCwlOqMIQmLeKvxJRRdFtYFJiHVFKxXJpHplejbOZdhNQjUqcyaNdSLuuNIduSUMItLbWCLEHQuXHDhgJblaobOtQMIFjKVqSJYStKrhgjTqamtsbAdbbtIGnLXKyxEdaQSTeywrTyKqiycWoePXaQZjRGYXioCCxdnLDpfcRIOcarHbvIiKDQELOJIURwRscSJUvaheBlyuHHRpKGtysbBDWfxaIQPvRwHgFFMoGVusPVQbpMIZNoohgKkPKLeZoCfPuqwPHQuDExsVQpHtwwJGUvrqPFrbFJHlbpgFpqxrFKJsacmFfDlxCSsZtEgImaWTpgavgBHkyIJMkgarPnTKPCagxIDJFELfGJGHBZEGkSaVeMrxeGfSfSZAXKUXqKwAGDMdIXVLYTKVGyOntrCDBsWWHKmTMmMtsnjyixZJdKZYKQgGuXbGZmTSVOUMDoIIHDxZrNWjpYrORdltNZaUVUmEwpmnDvaHtiUUmmQkdLuRMGPeVYNLdWBaNbfcYJmfiRFpWlXrrWUstJLUncZPnubGAvRRbXhQoPmhUoWSVUuJgxCgUWdDRLexxO",
+							"evidence": "Connection: close",
+							"otherinfo": "Potential Buffer Overflow. The script closed the connection and threw a 500 Internal Server Error."
+						},
+						{
+							"id": "1832",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-C36DWB/commodities",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(crumb,species)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "ScFIoIRGqDQitWXjbGjsNnmkOPNFBHDHAUuydlAGsdHmqtmeRaIHpmqZBRcRUAvoatybUSuOHeqUJhoNkCdDGfwisOqhyTjXTQlOjCuVQbJNQqpLhjDFHFEZNaVjTcIhMwjUXifooAZBjmbkihDkYNGXbgKxVVdyeVxOpkrmSZVKoLgukJdwixXHWUiPYueOLVBMKtmlcRUfhqYNReRmfgntihLbdJqeSbyatWqOUwNhbIfvLbUUoyTdxBXXWTbkdPhnugtqicbqdAblbyBMyDJyFJjrcVVbLhqtleVZqymyVbtWogiHSMpqnAeReNuprrWuRPreCfYruuMjaGcdGRvdobVSQHohgwjQdfNnSsSVLyoLOWeKSGRyKaTYrihkawLiOAoTePoHCNPjMbJNkHhHJwWCmAsFwClVfapuJIOZxfGYVvwkiqQBVfpLIlIOnQRwXkUhYlhdCxvVygQbOqKRCATxmAWDeKgjydbLSntUfiTpsvSbBRvBUKiQsqslHfEetLGubMrnpFhDDlaJgNbrpftiYPDASaKXmIZuYRgWsIWihBsLHeUSDaBceYFYlQTrStboKvAWGKZRmXuxrEISZsKObipKQJmCxxgmNgQBnKadpVlivrGIFHofOyNvFRgGQKYNJgvWEkfqJbTpRhjqecgmQAPvPotNbtpdNTWSjPOaGMxgoeCGbEGrpnTHBrmuOOXEBHvxInAZOejVLJOriAKZTcZfYSGmiqihyWlkboRuspIkFHYCHrvfhkwOPKUJvyWMfdCwnsHIYdLDMfbvHRcMXpTXNDNicqTfZedqJebvICnkBpLsnsfwJPhriKfaAhIRItTAfIVBCpYJUGhJDfMLXDrOyZaTTWvBcgFGsHMZwfTRgbjMWDYcsYxwBbUBwjFhqMxufVcjSFoLfJbkfdNGloFPtIWRHcmFKYJUuteYBAvpGuJjQxwGZprEFVWEafmiSnfiwkDXqltvyiZqsHixqKxoFwsJPkrnyXLTRKCXtTnllbTUByGBLtLsihPRMBiQuYNADFvBgwcPlEwvCNoBnKVVciIEQtGcPeIjhKPsyUEhTpVRJFutnqMpogKwieqambeqeGmqXMDuoRjcGjJUlkrefPurMENRCVPXROjFFGqxlFlQrPQHXgbTEPNSasyksaLfHpfpbhuQfydyPBKGoQIwyewAyVrbijkDCtRChhTPXWaFvdjUnnfaowwgoyDVWJXIYrOlgTFQiKAenJoFyGDAptgbbbIGQubfCcjmjNKvYovtPoRkTWwTVFEwBhhxYMPHbZZyVrxkURvWpLfPoMwgjfTnPZfQfOXUwEdVGyxfvuAlEArUuxDGMYdHjTQtOMkGVQIWIeEOFntkkdndPOeWKrRSFaMyYlOWCADnJUXOJIGxfvGRyROekSjmPlAKLTAVkBVFgxsCXxsHbGeMSSEsAmBnKCsHFnfXMObKZkyGthIQPAAkAORtqkkvlZUoWwPBwtfOFTkQRQVpjRRbBPZCyrtkROYCmtlUppRbuckCbcXCqksBMjHAAgIqNPoxDRsvnUaheavZtAnouaUYJHldWlGqrdZKsIUbVwmFakZVMfKGAJMvBwOJBGwVxIQiyWJxOvqaHrqLSnpyLyexUCthDFwVDKIHUDhtypEEBLgNcqFHyKfVuKZcRpQbwTMvfiHTjCeuwHZhBFtAjLOuoEIFNqpxjLmjcOkjdZEarOQAWcEpXsjORUTIRZGqSyyBWfstGpaMeNwwuhqfDjRLcEDmTNFMaUrqfjXGXipuKSBtSEYiNRPFDrwINfMxCxBQbnnEMVwQsmdPTgPqbfrwIxImlSPJPMvwPVNKPnwEEwYJANFsWSKTBGQhDkambPAHXTZuNODeyyGxXXPlPWxgbhbuYFyrJdtMnShnsQMtvUcMaEEfPRNpJlLFatOysXHOXEsVJxWZDvYCwnEPXNZwCryaaEXRbuURbYjdvAEQHuOPNscryfrWPkRrLBFBmLSSiOKcUcryojJhWjyiGXbxSgADnJacVGNjZMNJvHljXtDMZfPDDawcKAoEQXMnkZdZnocRFDDNttmikkwQRTYdbfDpPWCinToGgDdScdeTLcTS",
+							"evidence": "Connection: close",
+							"otherinfo": "Potential Buffer Overflow. The script closed the connection and threw a 500 Internal Server Error."
+						},
+						{
+							"id": "1834",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-C36DWB/transporters",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(crumb,transporter)",
+							"method": "POST",
+							"param": "\u00ABjourneyId\u00BB",
+							"attack": "FWVjJjgKjCOMrGRjmYriPlRvAosbEAJnnkipJtFXoFKTyhjuGbZQMshVrubAOWsHSHppYXIaxObyxXIurZpZdMgXTrgSEDSNDVUJcpyLnlJmuZaYdwuVtxCNDixwGEqUGHMOmdxYkpOoNQlQskqCiSUeuUTgDuPaMiLWgULmRBBWOHQFhoKfMGClQqAujDNlTBaLLhUHpihReXXuLopEhmkGtWapoWKvNRbRrfZQngETKUJgwoEcNqcQhqTtsqGgWrIXBHIPPIyJbaEOuVuSWimlRVOZEDlKXBCEqrhhkSXnCULgcHDKRSuDxFTCjhFeusvoOgrMLAYjRwErVFFKYdyKnSAJGUNfTLNyfAGsgjlervExqjcVbwVYkEyZeEpNZXoYbNfXGUqVNCwowvWatJCOFvDiBZJIFGXdJZqWgwlngDmeeqLXydjTQpuKkTldOadhpbFxXQhEKmampDqrjsRakRGJFImXcrPwRTTljgwZuaPTxcqeNhHtlSSYZTSbdimqwVPCNjuKpVfmQCPJqiEnkAnyqkLMWiVdqSSfYgixoMTWAorYJrbDUnJaqwdgMVGuOFmtriuNmqPqNMieDwCquajfnvBmHrUgqABEdFbPCmJQKYEtpIOFXkPUbRTGQPHoclOjsGRVPHWGSkWpoBwdKuTZefJsPraveqwdKpivLNghulMSHrqwvEfkgPPPaGbjOvENQreEtoWaBodoDhwMURbAdgbjpvhIxhbJalUolaopajLLKDcKaUSFutqbfBuLIUKbMCoiLVQayRBwngTVTMVNxbFDetLMXBLKcCfPIjtteErjJcfmkVBWBELlsyqwCuGVxxOCtkAirxRLWYbVDOJwJWAZgWxywcJewMFhaZMskCYeObYGpFTljjESrFbqATCeHwQcdTeIFGtBbIokYQENcyHEvImsLwCdbcNVSfnlDqJQSGRrRkNWXPTJkFfXeOdaZgbpLtnbHdvWBSdGpnFsyFPtrCJWkSsIgdHvxFMLjavmptPLaJgyNrIZFIxmxFAtOqSQFZjmoRYtMUuwYOqHlTOKNeoxmTkEfukOvwVyeuKQmGRSDylCXGPQTSCMbaoEBmuYUDbhQyCukOFZtjsYoOGOUVlCujjNsVvIOriITIimcnidPDmgisseGFTjXVQTsqqNfIBaABYowhOgokhVqUwKmJPhwICXdLlBpNfYqGHhAoHLfFkpMCpOhnTaumphxJJpVYZeIKZuxICYixvfyltLovFFkpdNFWDvZnHmuUqpbQFtjfjyZmmnLcgcrdhcPLgGoZDwJNnQFVUfyfXuTVWdDbihFIsXUuKrtiZmhkkYeQThIDtoncQUlVveTdvIxalCJpGMojWfPJbNOjpyiphoSCWtbQGsZXsomWnfnWPSppswtgPdUcVijvtSCTZhCHFBCFrwqfyNDQFURmApoAqQTGDXcCKuVNwDvZmUklDTJScSvMkpoNKdhrmfFGAgwxJyauCHNjjdylYZBlaTpGRpagGLCYFqbMRYXILnsZlOMdiSKbgQpNXuTMqjaJwTCZdWmgqxPkdnxLRLPNJuOrdcmkIgTmGTvSPYTrGjMovlXlirIhrfsUUyXwTquHEaZUpqOapJDteYSBkBKvmZuHqbgQbZWiDZPKIJHhcsVKYlCUTYCGPKhJnwFpsKnakXhTUAiOerKCpkiTeCECJEwOhKqawYWBdbfALQRWfJYyIsAeIMDhiNavMfkdenDHEVeFJIDNLXmkWXJGpcqPHpHGBLupCfgiFNYbcKaNgyyRQrSoUkJKLIvxVlCoBNrFGCUGpVvGLCTLKUxspLcfISDHMuhEgOuQplaNHlmOrJvUwGcjbETKdtVeufqNwqpiNXptZAYCsaFViVpOxbjqYuRKeMscehwqUnKQMlZKIKyWmWmckUaPSDlmhNMmEUmMqMVQBhUBfWfBFGBXmDUbUYCEsSmGWtgfUaMvgMFLCGfRukKJuMKsQTxvSwWKeIuvLGwjynKWrDIeMauRRpeYStJGrswBKHUojZyEPZQQdxRwraNhVxMJjEBUkqvkVUksVDyOkOwImtpOxkTugVaSMnUgUqCxUCJRTvVGCmmRmWfKWJ",
+							"evidence": "Connection: close",
+							"otherinfo": "Potential Buffer Overflow. The script closed the connection and threw a 500 Internal Server Error."
+						}
+					],
+					"count": "8",
+					"systemic": false,
+					"solution": "&lt;p&gt;Rewrite the background program using proper return length checking. This will require a recompile of the background executable.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;Potential Buffer Overflow. The script closed the connection and threw a 500 Internal Server Error.&lt;/p&gt;",
+					"reference": "&lt;p&gt;https://owasp.org/www-community/attacks/Buffer_overflow_attack&lt;/p&gt;",
+					"cweid": "120",
+					"wascid": "7",
+					"sourceid": "60389"
+				},
+				{
+					"pluginid": "30002",
+					"alertRef": "30002",
+					"alert": "Format String Error",
+					"name": "Format String Error",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "&lt;p&gt;A Format String error occurs when the submitted data of an input string is evaluated as a command by the application.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1839",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/importers/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,concurrencyToken,crumb,page,party,q)",
+							"method": "POST",
+							"param": "action",
+							"attack": "ZAP %1!s%2!s%3!s%4!s%5!s%6!s%7!s%8!s%9!s%10!s%11!s%12!s%13!s%14!s%15!s%16!s%17!s%18!s%19!s%20!s%21!n%22!n%23!n%24!n%25!n%26!n%27!n%28!n%29!n%30!n%31!n%32!n%33!n%34!n%35!n%36!n%37!n%38!n%39!n%40!n\n",
+							"evidence": "",
+							"otherinfo": "Potential Format String Error. The script closed the connection on a Microsoft format string error."
+						},
+						{
+							"id": "1835",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/importers/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,concurrencyToken,crumb,page,party,q)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "ZAP%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s\n",
+							"evidence": "",
+							"otherinfo": "Potential Format String Error. The script closed the connection on a /%s."
+						},
+						{
+							"id": "1836",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/importers/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,concurrencyToken,crumb,page,party,q)",
+							"method": "POST",
+							"param": "page",
+							"attack": "ZAP%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s\n",
+							"evidence": "",
+							"otherinfo": "Potential Format String Error. The script closed the connection on a /%s."
+						},
+						{
+							"id": "1841",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/additional-details?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(animalsCertifiedFor,concurrencyToken,containsUnweanedAnimals,crumb,exit)",
+							"method": "POST",
+							"param": "exit",
+							"attack": "ZAP %1!s%2!s%3!s%4!s%5!s%6!s%7!s%8!s%9!s%10!s%11!s%12!s%13!s%14!s%15!s%16!s%17!s%18!s%19!s%20!s%21!n%22!n%23!n%24!n%25!n%26!n%27!n%28!n%29!n%30!n%31!n%32!n%33!n%34!n%35!n%36!n%37!n%38!n%39!n%40!n\n",
+							"evidence": "",
+							"otherinfo": "Potential Format String Error. The script closed the connection on a Microsoft format string error."
+						},
+						{
+							"id": "1838",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/port-of-entry?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(arrivalDateAtPort,concurrencyToken,crumb,exit,meansOfTransport,portOfEntry,transportDocumentReference,transportIdentification)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "ZAP%x%x%x%x%x%x%x%x%x%x\n",
+							"evidence": "",
+							"otherinfo": "Potential Format String Error. The script closed the connection on a /%s and /%x."
+						},
+						{
+							"id": "1843",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/commodities?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(commoditySearch,concurrencyToken,crumb,exit,species)",
+							"method": "POST",
+							"param": "exit",
+							"attack": "ZAP %1!s%2!s%3!s%4!s%5!s%6!s%7!s%8!s%9!s%10!s%11!s%12!s%13!s%14!s%15!s%16!s%17!s%18!s%19!s%20!s%21!n%22!n%23!n%24!n%25!n%26!n%27!n%28!n%29!n%30!n%31!n%32!n%33!n%34!n%35!n%36!n%37!n%38!n%39!n%40!n\n",
+							"evidence": "",
+							"otherinfo": "Potential Format String Error. The script closed the connection on a Microsoft format string error."
+						},
+						{
+							"id": "1842",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/consignment/contact/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,contactAddress,crumb,exit)",
+							"method": "POST",
+							"param": "exit",
+							"attack": "ZAP%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s\n",
+							"evidence": "",
+							"otherinfo": "Potential Format String Error. The script closed the connection on a /%s."
+						},
+						{
+							"id": "1837",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/origin?from=ZAP%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%0A",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,countryOfOrigin,crumb,internalReferenceNumber,regionOfOriginCodeRequirement,regionOfOriginCodeSuffix)",
+							"method": "POST",
+							"param": "from",
+							"attack": "ZAP%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s\n",
+							"evidence": "",
+							"otherinfo": "Potential Format String Error. The script closed the connection on a /%s."
+						},
+						{
+							"id": "1840",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-N9S0DP/consignment-details?from=ZAP%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%25n%25s%0A",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,numberOfAnimalsQuantity-0,numberOfPackages-0)",
+							"method": "POST",
+							"param": "from",
+							"attack": "ZAP%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s\n",
+							"evidence": "",
+							"otherinfo": "Potential Format String Error. The script closed the connection on a /%s."
+						},
+						{
+							"id": "1844",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/import-reason?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(concurrencyToken,crumb,exit,purposeInInternalMarket,reasonForImport,temporaryAdmissionExitDate,temporaryAdmissionPortOfExit,transhipmentDestinationCountry,transitDestinationCountry,transitPortOfExit)",
+							"method": "POST",
+							"param": "transhipmentDestinationCountry",
+							"attack": "ZAP%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s\n",
+							"evidence": "",
+							"otherinfo": "Potential Format String Error. The script closed the connection on a /%s."
+						}
+					],
+					"count": "10",
+					"systemic": false,
+					"solution": "&lt;p&gt;Rewrite the background program using proper deletion of bad character strings. This will require a recompile of the background executable.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;Potential Format String Error. The script closed the connection on a Microsoft format string error.&lt;/p&gt;",
+					"reference": "&lt;p&gt;https://owasp.org/www-community/attacks/Format_string_attack&lt;/p&gt;",
+					"cweid": "134",
+					"wascid": "6",
+					"sourceid": "61247"
+				},
+				{
+					"pluginid": "10036",
+					"alertRef": "10036-2",
+					"alert": "Server Leaks Version Information via \"Server\" HTTP Response Header Field",
+					"name": "Server Leaks Version Information via \"Server\" HTTP Response Header Field",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "&lt;p&gt;The web/application server is leaking version information via the \"Server\" HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "0",
+							"uri": "http://localhost:3000/",
+							"nodeName": "http:\/\/localhost:3000\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "nginx/1.29.8",
+							"otherinfo": ""
+						},
+						{
+							"id": "2",
+							"uri": "http://localhost:3000/auth/sign-in?redirect=%2F",
+							"nodeName": "http:\/\/localhost:3000\/auth\/sign-in (redirect)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "nginx/1.29.8",
+							"otherinfo": ""
+						},
+						{
+							"id": "49",
+							"uri": "http://localhost:3000/auth/sign-in-oidc?code=2f54f92809f5e1a817f6248f7c945556ae4667757226c7e2d941277171077800&amp;state=DOJvcyARWiHltbQtxnCG9f",
+							"nodeName": "http:\/\/localhost:3000\/auth\/sign-in-oidc (code,state)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "nginx/1.29.8",
+							"otherinfo": ""
+						},
+						{
+							"id": "1",
+							"uri": "http://localhost:3000/live-animals",
+							"nodeName": "http:\/\/localhost:3000\/live-animals",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "nginx/1.29.8",
+							"otherinfo": ""
+						},
+						{
+							"id": "65",
+							"uri": "http://localhost:3000/public/stylesheets/application.16b262f.min.css",
+							"nodeName": "http:\/\/localhost:3000\/public\/stylesheets\/application.16b262f.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "nginx/1.29.8",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "&lt;p&gt;Ensure that your web server, application server, load balancer, etc. is configured to suppress the \"Server\" header or provide generic details.&lt;/p&gt;",
+					"otherinfo": "",
+					"reference": "&lt;p&gt;https://httpd.apache.org/docs/current/mod/core.html#servertokens&lt;/p&gt;&lt;p&gt;https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)&lt;/p&gt;&lt;p&gt;https://www.troyhunt.com/shhh-dont-let-your-response-headers/&lt;/p&gt;",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "&lt;p&gt;A timestamp was disclosed by the application/web server. - Unix&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "66",
+							"uri": "http://localhost:3000/public/stylesheets/application.16b262f.min.css",
+							"nodeName": "http:\/\/localhost:3000\/public\/stylesheets\/application.16b262f.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1904761905",
+							"otherinfo": "1904761905, which evaluates to: 2030-05-11 20:31:45."
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "&lt;p&gt;Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;1904761905, which evaluates to: 2030-05-11 20:31:45.&lt;/p&gt;",
+					"reference": "&lt;p&gt;https://cwe.mitre.org/data/definitions/200.html&lt;/p&gt;",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "43"
+				},
+				{
+					"pluginid": "10058",
+					"alertRef": "10058",
+					"alert": "GET for POST",
+					"name": "GET for POST",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "&lt;p&gt;A request that was originally observed as a POST was also accepted as a GET. This issue does not represent a security weakness unto itself, however, it may facilitate simplification of other attacks. For example if the original POST is subject to Cross-Site Scripting (XSS), then this finding may indicate that a simplified (GET based) XSS may also be possible.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1845",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/importers/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (action,concurrencyToken,crumb,page,q)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "GET http://localhost:3000/live-animals/notifications/GBN-AG-26-2TVBYC/importers/select?action=search&amp;concurrencyToken=&amp;crumb=p5NsJ1XP1nZaVAVLDqHZ-szUARO_BbPnb4jWiBCraZq&amp;page=1&amp;q=Import%20Co%20UK HTTP/1.1",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "&lt;p&gt;Ensure that only POST is accepted where POST is expected.&lt;/p&gt;",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "16",
+					"wascid": "20",
+					"sourceid": "66667"
+				},
+				{
+					"pluginid": "10024",
+					"alertRef": "10024",
+					"alert": "Information Disclosure - Sensitive Information in URL",
+					"name": "Information Disclosure - Sensitive Information in URL",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "&lt;p&gt;The request appeared to contain sensitive information leaked in the URL. This can violate PCI and most organizational compliance policies. You can configure the list of strings for this check to add or remove values specific to your environment.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "342",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-YP2V6W/accompanying-documents?from=overview&amp;attempt=1&amp;uploadSession=839abae8-c437-4484-8c3d-a0ee4e9e6603",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (attempt,from,uploadSession)",
+							"method": "GET",
+							"param": "uploadSession",
+							"attack": "",
+							"evidence": "uploadSession",
+							"otherinfo": "The URL contains potentially sensitive information. The following string was found via the pattern: session\nuploadSession"
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "&lt;p&gt;Do not pass sensitive information in URIs.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;The URL contains potentially sensitive information. The following string was found via the pattern: session&lt;/p&gt;&lt;p&gt;uploadSession&lt;/p&gt;",
+					"reference": "",
+					"cweid": "598",
+					"wascid": "13",
+					"sourceid": "156"
+				},
+				{
+					"pluginid": "10109",
+					"alertRef": "10109",
+					"alert": "Modern Web Application",
+					"name": "Modern Web Application",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "&lt;p&gt;The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "243",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-PZAKZZ",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "&lt;a class=\"govuk-service-navigation__link\" href=\"#\"&gt;\n                                    \nManage account\n                  &lt;/a&gt;",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "231",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-PZAKZZ/origin?from=dashboard",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "&lt;a class=\"govuk-service-navigation__link\" href=\"#\"&gt;\n                                    \nManage account\n                  &lt;/a&gt;",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "61",
+							"uri": "http://localhost:3000/live-animals",
+							"nodeName": "http:\/\/localhost:3000\/live-animals",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "&lt;a class=\"govuk-service-navigation__link\" href=\"#\"&gt;\n                                    \nManage account\n                  &lt;/a&gt;",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "251",
+							"uri": "http://localhost:3000/live-animals?sort=arrivalDate%2Cdesc&amp;referenceNumber=GBN-AG-26-0SM0ZR",
+							"nodeName": "http:\/\/localhost:3000\/live-animals (referenceNumber,sort)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "&lt;a class=\"govuk-service-navigation__link\" href=\"#\"&gt;\n                                    \nManage account\n                  &lt;/a&gt;",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "255",
+							"uri": "http://localhost:3000/live-animals?sort=createdAt%2Casc",
+							"nodeName": "http:\/\/localhost:3000\/live-animals (sort)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "&lt;a class=\"govuk-service-navigation__link\" href=\"#\"&gt;\n                                    \nManage account\n                  &lt;/a&gt;",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "&lt;p&gt;This is an informational alert and so no changes are required.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.&lt;/p&gt;",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "114"
+				},
+				{
+					"pluginid": "10112",
+					"alertRef": "10112",
+					"alert": "Session Management Response Identified",
+					"name": "Session Management Response Identified",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "&lt;p&gt;The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "82",
+							"uri": "http://localhost:3000/",
+							"nodeName": "http:\/\/localhost:3000\/",
+							"method": "GET",
+							"param": "crumb",
+							"attack": "",
+							"evidence": "crumb",
+							"otherinfo": "cookie:crumb"
+						},
+						{
+							"id": "4",
+							"uri": "http://localhost:3000/auth/sign-in?redirect=%2F",
+							"nodeName": "http:\/\/localhost:3000\/auth\/sign-in (redirect)",
+							"method": "GET",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session\ncookie:bell-defra-id"
+						},
+						{
+							"id": "51",
+							"uri": "http://localhost:3000/auth/sign-in-oidc?code=2f54f92809f5e1a817f6248f7c945556ae4667757226c7e2d941277171077800&amp;state=DOJvcyARWiHltbQtxnCG9f",
+							"nodeName": "http:\/\/localhost:3000\/auth\/sign-in-oidc (code,state)",
+							"method": "GET",
+							"param": "sid",
+							"attack": "",
+							"evidence": "sid",
+							"otherinfo": "cookie:sid\ncookie:crumb\ncookie:session"
+						},
+						{
+							"id": "781",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ATMXGV/notification-view",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB",
+							"method": "GET",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session"
+						},
+						{
+							"id": "456",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/consignors/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)",
+							"method": "GET",
+							"param": "liveAnimalsAddressHandshakeTokens",
+							"attack": "",
+							"evidence": "liveAnimalsAddressHandshakeTokens",
+							"otherinfo": "cookie:liveAnimalsAddressHandshakeTokens"
+						},
+						{
+							"id": "546",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/notification-view?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)",
+							"method": "GET",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session"
+						},
+						{
+							"id": "157",
+							"uri": "http://localhost:3000/live-animals",
+							"nodeName": "http:\/\/localhost:3000\/live-animals",
+							"method": "GET",
+							"param": "crumb",
+							"attack": "",
+							"evidence": "crumb",
+							"otherinfo": "cookie:crumb"
+						},
+						{
+							"id": "1236",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-DATMYY/commodities",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(action,commoditySearch,crumb)",
+							"method": "POST",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session"
+						},
+						{
+							"id": "572",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/copy",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(concurrencyToken,copyOrigin,crumb)",
+							"method": "POST",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session"
+						},
+						{
+							"id": "548",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/declaration",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(concurrencyToken,crumb,declaration,step)",
+							"method": "POST",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session"
+						},
+						{
+							"id": "1239",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-DATMYY/commodities",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(crumb,species)",
+							"method": "POST",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session"
+						},
+						{
+							"id": "287",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-PZAKZZ/commodities?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,commoditySearch,concurrencyToken,crumb)",
+							"method": "POST",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session"
+						},
+						{
+							"id": "455",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/consignors/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,concurrencyToken,crumb,page,q)",
+							"method": "POST",
+							"param": "liveAnimalsAddressHandshakeTokens",
+							"attack": "",
+							"evidence": "liveAnimalsAddressHandshakeTokens",
+							"otherinfo": "cookie:liveAnimalsAddressHandshakeTokens"
+						},
+						{
+							"id": "294",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-PZAKZZ/commodities?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(commoditySearch,concurrencyToken,crumb,exit,species)",
+							"method": "POST",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session"
+						},
+						{
+							"id": "208",
+							"uri": "http://localhost:3000/live-animals/notifications",
+							"nodeName": "http:\/\/localhost:3000\/live-animals\/notifications ()(crumb)",
+							"method": "POST",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session"
+						},
+						{
+							"id": "780",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ATMXGV/notification-view",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB",
+							"method": "GET",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session"
+						},
+						{
+							"id": "457",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/consignors/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)",
+							"method": "GET",
+							"param": "liveAnimalsAddressHandshakeTokens",
+							"attack": "",
+							"evidence": "liveAnimalsAddressHandshakeTokens",
+							"otherinfo": "cookie:liveAnimalsAddressHandshakeTokens"
+						},
+						{
+							"id": "756",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ATMXGV/notification-view?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)",
+							"method": "GET",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session"
+						},
+						{
+							"id": "1218",
+							"uri": "http://localhost:3000/live-animals",
+							"nodeName": "http:\/\/localhost:3000\/live-animals",
+							"method": "GET",
+							"param": "crumb",
+							"attack": "",
+							"evidence": "crumb",
+							"otherinfo": "cookie:crumb"
+						},
+						{
+							"id": "1240",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-DATMYY/commodities",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(crumb,species)",
+							"method": "POST",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session"
+						},
+						{
+							"id": "419",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/commodities?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,commoditySearch,concurrencyToken,crumb)",
+							"method": "POST",
+							"param": "session",
+							"attack": "",
+							"evidence": "session",
+							"otherinfo": "cookie:session"
+						},
+						{
+							"id": "657",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ATMXGV/consignors/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,concurrencyToken,crumb,page,q)",
+							"method": "POST",
+							"param": "liveAnimalsAddressHandshakeTokens",
+							"attack": "",
+							"evidence": "liveAnimalsAddressHandshakeTokens",
+							"otherinfo": "cookie:liveAnimalsAddressHandshakeTokens"
+						}
+					],
+					"count": "22",
+					"systemic": false,
+					"solution": "&lt;p&gt;This is an informational alert rather than a vulnerability and so there is nothing to fix.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;cookie:crumb&lt;/p&gt;",
+					"reference": "&lt;p&gt;https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/&lt;/p&gt;",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "56"
+				},
+				{
+					"pluginid": "10104",
+					"alertRef": "10104",
+					"alert": "User Agent Fuzzer",
+					"name": "User Agent Fuzzer",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "&lt;p&gt;Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "1846",
+							"uri": "http://localhost:3000/",
+							"nodeName": "http:\/\/localhost:3000\/",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "1848",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-C36DWB/additional-details",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(animalsCertifiedFor,containsUnweanedAnimals,crumb)",
+							"method": "POST",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "1847",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-C36DWB/port-of-entry",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(arrivalDateAtPort,crumb,meansOfTransport,portOfEntry,transportDocumentReference,transportIdentification)",
+							"method": "POST",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": true,
+					"solution": "",
+					"otherinfo": "",
+					"reference": "&lt;p&gt;https://owasp.org/www-project-web-security-testing-guide/&lt;/p&gt;",
+					"cweid": "0",
+					"wascid": "0",
+					"sourceid": "66693"
+				},
+				{
+					"pluginid": "10031",
+					"alertRef": "10031",
+					"alert": "User Controllable HTML Element Attribute (Potential XSS)",
+					"name": "User Controllable HTML Element Attribute (Potential XSS)",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "&lt;p&gt;This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.&lt;/p&gt;",
+					"instances":[ 
+						{
+							"id": "345",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-YP2V6W/accompanying-documents?from=overview&amp;attempt=1&amp;uploadSession=839abae8-c437-4484-8c3d-a0ee4e9e6603",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (attempt,from,uploadSession)",
+							"method": "GET",
+							"param": "uploadSession",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals/notifications/GBN-AG-26-YP2V6W/accompanying-documents?from=overview&amp;attempt=1&amp;uploadSession=839abae8-c437-4484-8c3d-a0ee4e9e6603\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nuploadSession=839abae8-c437-4484-8c3d-a0ee4e9e6603\n\nThe user-controlled value was:\n839abae8-c437-4484-8c3d-a0ee4e9e6603"
+						},
+						{
+							"id": "257",
+							"uri": "http://localhost:3000/live-animals?sort=arrivalDate%2Cdesc&amp;referenceNumber=GBN-AG-26-0SM0ZR",
+							"nodeName": "http:\/\/localhost:3000\/live-animals (referenceNumber,sort)",
+							"method": "GET",
+							"param": "referenceNumber",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals?sort=arrivalDate%2Cdesc&amp;referenceNumber=GBN-AG-26-0SM0ZR\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nreferenceNumber=GBN-AG-26-0SM0ZR\n\nThe user-controlled value was:\ngbn-ag-26-0sm0zr"
+						},
+						{
+							"id": "254",
+							"uri": "http://localhost:3000/live-animals?sort=arrivalDate%2Cdesc&amp;referenceNumber=GBN-AG-26-0SM0ZR",
+							"nodeName": "http:\/\/localhost:3000\/live-animals (referenceNumber,sort)",
+							"method": "GET",
+							"param": "sort",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals?sort=arrivalDate%2Cdesc&amp;referenceNumber=GBN-AG-26-0SM0ZR\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nsort=arrivalDate,desc\n\nThe user-controlled value was:\narrivaldate,desc"
+						},
+						{
+							"id": "261",
+							"uri": "http://localhost:3000/live-animals?sort=createdAt%2Casc",
+							"nodeName": "http:\/\/localhost:3000\/live-animals (sort)",
+							"method": "GET",
+							"param": "sort",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals?sort=createdAt%2Casc\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nsort=createdAt,asc\n\nThe user-controlled value was:\ncreatedat,asc"
+						},
+						{
+							"id": "1233",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-DATMYY/commodities",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(action,commoditySearch,crumb)",
+							"method": "POST",
+							"param": "action",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals/notifications/GBN-AG-26-DATMYY/commodities\n\nappears to include user input in:\na(n) [input] tag [type] attribute\n\nThe user input found was:\naction=search\n\nThe user-controlled value was:\nsearch"
+						},
+						{
+							"id": "1234",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-DATMYY/commodities",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(action,commoditySearch,crumb)",
+							"method": "POST",
+							"param": "commoditySearch",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals/notifications/GBN-AG-26-DATMYY/commodities\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\ncommoditySearch=Bos taurus\n\nThe user-controlled value was:\nbos taurus"
+						},
+						{
+							"id": "1231",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-DATMYY/commodities",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(action,commoditySearch,crumb)",
+							"method": "POST",
+							"param": "crumb",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals/notifications/GBN-AG-26-DATMYY/commodities\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\ncrumb=78j7wfLlCfF1UEayqA9xkorpz_qisXj7Uhqn_GEmqPx\n\nThe user-controlled value was:\n78j7wfllcff1ueayqa9xkorpz_qisxj7uhqn_gemqpx"
+						},
+						{
+							"id": "552",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/declaration",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(concurrencyToken,crumb,step)",
+							"method": "POST",
+							"param": "concurrencyToken",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/declaration\n\nappears to include user input in:\na(n) [svg] tag [width] attribute\n\nThe user input found was:\nconcurrencyToken=16\n\nThe user-controlled value was:\n162"
+						},
+						{
+							"id": "551",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/declaration",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB ()(concurrencyToken,crumb,step)",
+							"method": "POST",
+							"param": "crumb",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/declaration\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\ncrumb=TZAG8pxGLdLQ7qcn0rDkHR5Gve5bQftgTYhSPS291px\n\nThe user-controlled value was:\ntzag8pxgldlq7qcn0rdkhr5gve5bqftgtyhsps291px"
+						},
+						{
+							"id": "271",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-PZAKZZ/commodities?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,commoditySearch,concurrencyToken,crumb)",
+							"method": "POST",
+							"param": "action",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals/notifications/GBN-AG-26-PZAKZZ/commodities?from=overview\n\nappears to include user input in:\na(n) [input] tag [type] attribute\n\nThe user input found was:\naction=search\n\nThe user-controlled value was:\nsearch"
+						},
+						{
+							"id": "272",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-PZAKZZ/commodities?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,commoditySearch,concurrencyToken,crumb)",
+							"method": "POST",
+							"param": "commoditySearch",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals/notifications/GBN-AG-26-PZAKZZ/commodities?from=overview\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\ncommoditySearch=Bos taurus\n\nThe user-controlled value was:\nbos taurus"
+						},
+						{
+							"id": "267",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-PZAKZZ/commodities?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,commoditySearch,concurrencyToken,crumb)",
+							"method": "POST",
+							"param": "crumb",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals/notifications/GBN-AG-26-PZAKZZ/commodities?from=overview\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\ncrumb=VJXJ6w31C2um4jv3bdN6-wG68bOVd6M_AAMQVVCFDe0\n\nThe user-controlled value was:\nvjxj6w31c2um4jv3bdn6-wg68bovd6m_aamqvvcfde0"
+						},
+						{
+							"id": "453",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/consignors/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,concurrencyToken,crumb,page,q)",
+							"method": "POST",
+							"param": "action",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/consignors/select?from=overview\n\nappears to include user input in:\na(n) [button] tag [value] attribute\n\nThe user input found was:\naction=search\n\nThe user-controlled value was:\nsearch"
+						},
+						{
+							"id": "449",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/consignors/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,concurrencyToken,crumb,page,q)",
+							"method": "POST",
+							"param": "crumb",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/consignors/select?from=overview\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\ncrumb=TZAG8pxGLdLQ7qcn0rDkHR5Gve5bQftgTYhSPS291px\n\nThe user-controlled value was:\ntzag8pxgldlq7qcn0rdkhr5gve5bqftgtyhsps291px"
+						},
+						{
+							"id": "451",
+							"uri": "http://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/consignors/select?from=overview",
+							"nodeName": "http:\/\/localhost:3000\/http:\/\/localhost:3000\/live-animals\/notifications\/\u00ABjourneyId\u00BB (from)(action,concurrencyToken,crumb,page,q)",
+							"method": "POST",
+							"param": "q",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://localhost:3000/live-animals/notifications/GBN-AG-26-ENVJME/consignors/select?from=overview\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nq=Astra Rosales\n\nThe user-controlled value was:\nastra rosales"
+						}
+					],
+					"count": "15",
+					"systemic": false,
+					"solution": "&lt;p&gt;Validate all input and sanitize output it before writing to any HTML attributes.&lt;/p&gt;",
+					"otherinfo": "&lt;p&gt;User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;http://localhost:3000/live-animals/notifications/GBN-AG-26-YP2V6W/accompanying-documents?from=overview&amp;attempt=1&amp;uploadSession=839abae8-c437-4484-8c3d-a0ee4e9e6603&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;appears to include user input in:&lt;/p&gt;&lt;p&gt;a(n) [input] tag [value] attribute&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;The user input found was:&lt;/p&gt;&lt;p&gt;uploadSession=839abae8-c437-4484-8c3d-a0ee4e9e6603&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;The user-controlled value was:&lt;/p&gt;&lt;p&gt;839abae8-c437-4484-8c3d-a0ee4e9e6603&lt;/p&gt;",
+					"reference": "&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html&lt;/p&gt;",
+					"cweid": "20",
+					"wascid": "20",
+					"sourceid": "156"
+				}
+			]
+		}
+	],
+	"sequences":[
+	]
+
+}
+</pre>
